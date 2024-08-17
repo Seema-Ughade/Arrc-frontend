@@ -11,7 +11,7 @@ const InternshipAdmin = () => {
   useEffect(() => {
     const fetchApplications = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:5000/api/v1/internships/internshipApplications');
+        const response = await axios.get('https://arrc-backend.onrender.com/api/v1/internships/internshipApplications');
         setApplications(response.data);
         setLoading(false);
       } catch (error) {

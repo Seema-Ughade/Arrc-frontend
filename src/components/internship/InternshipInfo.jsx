@@ -41,7 +41,7 @@ const InternshipInfo = () => {
       formData.append('mode', values.mode.toUpperCase());
       formData.append('education', values.education.toUpperCase());
 
-      await axios.post('http://127.0.0.1:5000/api/v1/internships/internshipApplications', formData, {
+      await axios.post('https://arrc-backend.onrender.com/v1/internships/internshipApplications', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 

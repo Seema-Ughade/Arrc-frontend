@@ -20,7 +20,7 @@ const Login = ({ setIsAuthenticated }) => {
         }),
         onSubmit: async (values) => {
             try {
-                const response = await axios.post('http://127.0.0.1:5000/api/v1/login', values);
+                const response = await axios.post('https://arrc-backend.onrender.com/v1/login', values);
                 localStorage.setItem('token', response.data.token);
                 toast.success('Login successful');
                 setIsAuthenticated(true); // Set authentication state to true

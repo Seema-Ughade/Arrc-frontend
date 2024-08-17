@@ -7,7 +7,7 @@ const ContactUsAdmin = () => {
     useEffect(() => {
         const fetchContacts = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:5000/api/v1/contacts');
+                const response = await axios.get('https://arrc-backend.onrender.com/contacts');
                 setContacts(response.data);
             } catch (error) {
                 console.error('Error fetching contacts:', error);

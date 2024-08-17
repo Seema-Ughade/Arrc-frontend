@@ -224,7 +224,7 @@
 //         setSubmitting(true);
 
 //         try {
-//             const response = await axios.post('http://127.0.0.1:5000/api/contact', values);
+//             const response = await axios.post('https://arrc-backend.onrender.com/contact', values);
 //             if (response.status === 200) {
 //                 setStatus({ success: true });
 //                 resetForm();
@@ -377,11 +377,12 @@
 //         </div>
 //     );
 // };
-
-// export default Contact;import React from 'react';
+import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import loading from '../assets/loading.gif';
 import logo1 from '../assets/logo1.jpeg';
 
@@ -404,14 +405,16 @@ const Contact = () => {
         setSubmitting(true);
 
         try {
-            const response = await axios.post('http://127.0.0.1:5000/api/v1/contact', values);
+            const response = await axios.post('https://arrc-backend.onrender.com/v1/contact', values);
             if (response.status === 200) {
                 setStatus({ success: true });
                 resetForm();
+                toast.success('Thanks for contacting us! We\'ll get back to you soon.');
             }
         } catch (error) {
             console.error('There was an error submitting the form', error);
             setStatus({ success: false });
+            toast.error('There was an error submitting the form. Please try again.');
         } finally {
             setSubmitting(false);
         }
@@ -419,6 +422,8 @@ const Contact = () => {
 
     return (
         <div>
+            <ToastContainer />
+
             <section className="map-section mx-3 sm:mx-8 lg:mx-8 mt-5 mb-6">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.4184171923325!2d73.817028!3d18.509984699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb054367e1f%3A0xc5984eb97914d4b2!2sIdeal%20Square%2C%20Nav-Swaraj%20co-op%20HSG%20SOC!5e0!3m2!1sen!2sin!4v1722940172501!5m2!1sen!2sin"
