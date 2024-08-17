@@ -404,7 +404,7 @@ const Contact = () => {
         setSubmitting(true);
 
         try {
-            const response = await axios.post('http://127.0.0.1:5000/api/v1/contact', values);
+            const response = await axios.post('https://arrc-backend.onrender.com/api/v1/contacts', values);
             if (response.status === 200) {
                 setStatus({ success: true });
                 resetForm();
