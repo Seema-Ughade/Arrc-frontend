@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+.perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .rotate-y-12 {
+    transform: rotateY(12deg);
+  }
+  
+  /* Custom CSS Variables */
+:root {
+  --main-color: #761fe3;
+}
+
+/* Custom Styles */
+.sec-title_title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.sec-title_heading span {
+  color: var(--main-color);
+}
+
+
+
+/* Add this to your global stylesheet */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  }
+  50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.pulse-button {
+  animation: pulse 1.5s infinite;
+}
+/* Example CSS */
+.counter-section .counter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+.service-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+.process-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.giphy-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
+  overflow: hidden;
+  background: #000; /* Optional: Background color if needed */
+}
+
+.giphy-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.giphy-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.giphy-link a {
+  color: #8B5CF6; /* Purple link color */
+  text-decoration: underline;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10%); /* Move left by 10% */
+  }
+  100% {
+    transform: translateX(0); /* Move back to the original position */
+  }
+}
+
+.dots-background {
+  height: 50%; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+  left: -10%; /* Adjust horizontal position */
+  top: 1%; /* Adjust vertical position */
+  position: absolute; /* Position the image absolutely */
+  z-index: -1; /* Place behind other content */
+  opacity: 0.5; /* Adjust opacity if needed */
+  animation: slide 4s linear infinite; /* Apply sliding animation */
+}
+/* ProcessSection.css or your global stylesheet */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.glow-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.glow-effect img {
+  display: block;
+  transition: transform 0.7s ease-in-out;
+}
+
+.glow-effect::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), rgba(119, 58, 255, 0.8), rgba(0, 204, 255, 0.8));
+  filter: blur(50px);
+  z-index: -1;
+  border-radius: 50%;
+}
+.text-xxs {
+  font-size: 0.7rem; /* Smaller than text-xs */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-three);
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	
+	
+	background-color: var(--color-two);
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url('./assets/bgnew.jpg') no-repeat center center fixed;
+  background-size: cover;
+  
+}
+
+
+.animated-element {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* styles.css */
+/* .reset-styles {
+  @apply m-0 p-0 border-none outline-none box-border;
+  font-family: var(--bs-body-font-family);
+  line-height: var(--bs-body-line-height);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  color: var(--bs-body-color);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+
+

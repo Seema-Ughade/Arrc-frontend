@@ -1,0 +1,126 @@
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  .flip-box-front {
+    background: linear-gradient(to right, #b3b3ea 0%, #6f53fa9a  100% );
+    color: black;
+  }
+  
+  .flip-box-back {
+    background: linear-gradient(to right, #a9d5d5 0%, #97efef 100%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+   */
+
+/* /* Styles for flip animation */
+ .flip-card {
+  perspective: 1000px; }
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+/* Example CSS */
+.counter-section .counter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+.service-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+
+.process-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.giphy-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  background: #000; /* Optional: Background color if needed */
+}
+
+.giphy-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.giphy-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.giphy-link a {
+  color: #8B5CF6; /* Purple link color */
+  text-decoration: underline;
+}
+/* ProcessSection.css or your global stylesheet */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.7s ease-out forwards;
+}
+
+
+

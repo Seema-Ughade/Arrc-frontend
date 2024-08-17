@@ -1,0 +1,67 @@
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: white; /* Change this to your preferred color */
+}
+.carousel-indicators .active {
+    background-color: #007bff; /* Change this to your preferred active color */
+}
+
+
+
+
+
+
+/* 
+
+
+
+
+
+
+.carousel-item {
+    position: relative;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+  }
+  
+  .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
+  
+  .position-absolute {
+    position: absolute;
+  }
+  
+  .end-0 {
+    right: 0;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .h-auto {
+    height: auto;
+  }
+  
+  .h-50 {
+    height: 50%;
+  }
+  
+  .w-auto {
+    width: auto;
+  }
+  
+  .hero-robot {
+    width: 300px;
+    height: auto; 
+    max-height: 60%; 
+    right: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+   */

@@ -1,0 +1,44 @@
+/* Base styles for cursor */
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    z-index: 10001;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33),
+                opacity 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33);
+  }
+  
+  /* Styles for cursor follower */
+  .cursor-follower {
+    position: fixed;
+    border: 0.5px solid var(--main-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 10000;
+    pointer-events: none;
+    user-select: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33),
+                opacity 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33),
+                background 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33);
+  }
+  
+  /* Styles when cursor follower is active */
+  .cursor-follower.active,
+  .cursor-follower.menu-active {
+    opacity: 1;
+    transform: scale(2);
+  }
+  
+  /* Styles when cursor follower is hovered */
+  .cursor-follower.hovered {
+    opacity: 1;
+  }
+  
+
+  
