@@ -376,8 +376,7 @@
 //             </section>
 //         </div>
 //     );
-// };
-import React from 'react';
+// };import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
@@ -405,7 +404,7 @@ const Contact = () => {
         setSubmitting(true);
 
         try {
-            const response = await axios.post('https://arrc-backend.onrender.com/v1/contact', values);
+            const response = await axios.post('http://127.0.0.1:5000/api/v1/contact', values);
             if (response.status === 200) {
                 setStatus({ success: true });
                 resetForm();
