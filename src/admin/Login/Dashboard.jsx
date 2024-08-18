@@ -4,7 +4,7 @@ import AdminSidebar from './AdminSidebar';
 import AdminNavbar from './AdminNavbar';
 import InternshipAdmin from '../ContactPage/InternshipAdmin';
 import ContactusAdmin from '../ContactPage/ContactusAdmin';
-import CoursesAdmin from '../ContactPage/CoursesAdmin';
+import CoursesAdmin from '../Course/CoursesAdmin';
 
 const Dashboard = ({ handleLogout }) => {
     return (

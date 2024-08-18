@@ -27,7 +27,7 @@
 // import IVRContent from './components/pages/ServicesPages/IVRContent.jsx'
 // import DigitalBroucher from './components/pages/ServicesPages/DigitalBroucher.jsx'
 // import InternshipCourse from './components/internship/InternshipCourse.jsx'
-// import InternshipInfo from './components/internship/InternshipInfo.jsx'
+// import  from './components/internship/InternshipInfo.jsx'
 // import Login from './admin/Login/Login.jsx'
 // import Dashboard from './admin/Login/Dashboard.jsx';
 
@@ -130,6 +130,11 @@ import CatelogDownload from './components/CatalogDownload'
 import SoftwareSol from './components/SoftwareSol'
 import DigitalBroucher from './components/pages/ServicesPages/DigitalBroucher'
 import IVRContent from './components/pages/ServicesPages/IVRContent'
+import CourseSection from './admin/Course/CourseSection'
+import CourseForm from './admin/Course/CourseForm'
+
+
+
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -166,6 +171,9 @@ const App = () => {
         <Route path="/internships" element={<><Navbar /><Internship /><Chatbot/><CatelogDownload/><Footer /></>} />
         <Route path="/InternshipCourse" element={<><Navbar /><InternshipCourse /><Chatbot/><CatelogDownload/><Footer /></>} />
         <Route path="/internshipInfo" element={<><Navbar /><InternshipInfo /><Chatbot/><CatelogDownload/><Footer /></>} />
+        <Route path="/courseInfo" element={<><Navbar /><CourseForm /><Chatbot/><CatelogDownload/><Footer /></>} />
+
+        <Route path="/CourseSection" element={<><Navbar /><CourseSection /><Chatbot/><CatelogDownload/><Footer /></>} />
 
         {/* Login Route */}
         <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
