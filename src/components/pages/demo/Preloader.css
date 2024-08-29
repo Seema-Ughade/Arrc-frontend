@@ -1,119 +1,45 @@
-/* Preloader.css */
 .marquee-container {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 100%; /* Full width of the parent container */
-    box-sizing: border-box;
-  }
-  
-  .marquee-content {
-    display: flex;
-    animation: marquee 20s linear infinite;
-    width: 300%; /* Adjust this width to ensure smooth scrolling */
-  }
-  
-  .marquee-content a {
-    display: block;
-    width: 33.333%; /* Show 3 images at a time */
-    position: relative; /* To position content absolutely inside */
-    box-sizing: border-box;
-  }
-  
-  .marquee-content img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .wdt-content-title,
-  .wdt-content-button {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #fff; /* Ensure text is readable */
-    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for readability */
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .wdt-content-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .wdt-content-button {
-    font-size: 14px;
-  }
-  
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
-  
-  
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Full width of the parent container */
+  box-sizing: border-box;
+}
 
+.marquee-content {
+  display: flex;
+  animation: marquee 30s linear infinite; /* Adjust the duration for smooth scrolling */
+  width: 600%; /* Ensure that the content is twice the width of the container for seamless scrolling */
+}
 
+.marquee-content a {
+  display: block;
+  flex: 1; /* Make each item take up equal space */
+  position: relative; /* To position content absolutely inside */
+  box-sizing: border-box;
+}
 
+.marquee-content img {
+  width: 90%;
+  height: 300px;
+}
 
+.wdt-content-title,
+.wdt-content-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff; /* Ensure text is readable */
+  background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for readability */
+  padding: 10px;
+  border-radius: 5px;
+}
 
+.wdt-content-title {
+  font-size: 18px;
+  font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
-  .marquee-container {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 100%; /* Full width of the parent container */
-    box-sizing: border-box;
-  }
-  
-  .marquee-content {
-    display: flex;
-    animation: marquee 20s linear infinite; /* Adjust the duration for smooth scrolling */
-    width: 300%; /* Adjust this width to ensure smooth scrolling */
-  }
-  
-  .marquee-content a {
-    display: block;
-    width: 33.333%; /* Show 3 images at a time */
-    position: relative; /* To position content absolutely inside */
-    box-sizing: border-box;
-  }
-  
-  .marquee-content img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .wdt-content-title,
-  .wdt-content-button {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #fff; /* Ensure text is readable */
-    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for readability */
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .wdt-content-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .wdt-content-button {
-    font-size: 14px;
-  }
-  
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); } /* Adjust to scroll over the width of 4 images */
-  }
-  
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Scroll over half the width (50%) of the content */
+}

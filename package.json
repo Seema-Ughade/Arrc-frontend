@@ -19,6 +19,7 @@
     "aos": "^2.3.4",
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
+    "file-saver": "^2.0.5",
     "formik": "^2.4.6",
     "framer-motion": "^11.3.12",
     "fuse.js": "^7.0.0",
@@ -36,6 +37,7 @@
     "react-toastify": "^10.0.5",
     "swiper": "^11.1.9",
     "three": "^0.167.0",
+    "xlsx": "^0.18.5",
     "yup": "^1.4.0"
   },
   "devDependencies": {

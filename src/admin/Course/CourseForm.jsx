@@ -21,7 +21,7 @@ const validationSchema = Yup.object({
 const CourseForm = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { title } = location.state || {};
+  const { title, overview } = location.state || {};
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
@@ -35,25 +35,29 @@ const CourseForm = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-gray-50">
+    <div className="relative min-h-screen ">
       <div className="container mx-auto px-6 py-12">
         <button
           onClick={() => navigate('/courseSection')}
-          className="bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700 mb-8"
+          className="bg-purple-600 text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700 mb-8"
         >
           Back
         </button>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
           {/* Left Side: Course Details */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">{title}</h2>
-            <p className="text-gray-600 mb-4">Please fill out the form to apply for this course.</p>
+          {/* Left Side: Course Details */}
+          <div className="p-8 rounded-lg bg-gray-900  shadow-lg">
+            <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
+            <p className="mb-4 text-white">{overview}</p>
+
+
+            <p className="text-white mb-4">Please fill out the form to apply for this course.</p>
           </div>
 
           {/* Right Side: Application Form */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Apply for {title}</h2>
+          <div className=" p-8 rounded-lg bg-gray-900 shadow-lg">
+            <h2 className="text-3xl font-bold text-purple-600 mb-6">Apply for {title}</h2>
             <Formik
               initialValues={{
                 name: '',
@@ -62,7 +66,7 @@ const CourseForm = () => {
                 city: '',
                 courseName: title || '',
                 mode: '',
-                date: null
+                date: ''
               }}
               validationSchema={validationSchema}
               onSubmit={handleSubmit}
@@ -71,7 +75,7 @@ const CourseForm = () => {
                 <Form>
                   <div className="space-y-6">
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Name</label>
+                      <label className="block text-white font-medium mb-2">Name</label>
                       <Field
                         type="text"
                         name="name"
@@ -81,7 +85,7 @@ const CourseForm = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Email</label>
+                      <label className="block text-white font-medium mb-2">Email</label>
                       <Field
                         type="email"
                         name="email"
@@ -91,7 +95,7 @@ const CourseForm = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Mobile Number</label>
+                      <label className="block text-white font-medium mb-2">Mobile Number</label>
                       <Field
                         type="text"
                         name="mobile"
@@ -101,7 +105,7 @@ const CourseForm = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">City</label>
+                      <label className="block text-white font-medium mb-2">City</label>
                       <Field
                         type="text"
                         name="city"
@@ -111,17 +115,17 @@ const CourseForm = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Course Name</label>
+                      <label className="block text-white font-medium mb-2">Course Name</label>
                       <Field
                         type="text"
                         name="courseName"
                         disabled
-                        className="form-input mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"
+                        className="form-input mt-1 bg-white block w-full px-3 py-2 border rounded-md shadow-sm"
                       />
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Mode (Online / Offline)</label>
+                      <label className="block text-white font-medium mb-2">Mode (Online / Offline)</label>
                       <Field
                         as="select"
                         name="mode"
@@ -135,7 +139,7 @@ const CourseForm = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Date</label>
+                      <label className="block text-white font-medium mb-2">Date</label>
                       <Field
                         type="date"
                         name="date"
@@ -146,7 +150,7 @@ const CourseForm = () => {
 
                     <button
                       type="submit"
-                      className="bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700"
+                      className="bg-purple-600 text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700"
                     >
                       Submit
                     </button>

@@ -8,8 +8,8 @@ import CoursesAdmin from '../Course/CoursesAdmin';
 
 const Dashboard = ({ handleLogout }) => {
     return (
-        <div className="flex h-screen">
-            <AdminSidebar />
+        <div className="flex h-[100vh] ">
+            <AdminSidebar  className = ' '/>
             <div className="flex-1 flex flex-col">
                 <AdminNavbar handleLogout={handleLogout} />
                 <main className="flex-1 p-6 bg-gray-100">

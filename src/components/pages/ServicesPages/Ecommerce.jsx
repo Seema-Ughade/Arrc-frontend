@@ -37,7 +37,7 @@ const Ecommerce = () => {
         />
              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
           <h1 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
-          Mobile App Development
+          Professional Ecommerce Web Development Company
           </h1>
         </div>
       </motion.div>

@@ -18,7 +18,9 @@ const InternshipCard = ({ title, overview, details, popular }) => {
           POPULAR
         </span>
       )}
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <h3 
+                  className="text-lg sm:text-xl lg:text-2xl font-bold mt-4 text-gradient bg-clip-text   text-purple-600 text-center hover:text-white transition-colors duration-300"
+                  >{title}</h3>
       <p className="mb-4">{overview}</p>
       <div className="ud-internship-body mb-4">
         <ul className="list-none p-0 m-0">
@@ -28,8 +30,8 @@ const InternshipCard = ({ title, overview, details, popular }) => {
         </ul>
       </div>
       <button
-        className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700"
-        onClick={handleApplyClick} // Add click event handler
+                  className="inline-block  bg-purple-600 hover:bg-gray-500   text-white hover:bg-gradient-to-l  rounded-xl w-[50%] px-3 py-1.5 text-center mt-4 transition-all duration-300"
+                  onClick={handleApplyClick} // Add click event handler
       >
         Apply Now
       </button>
@@ -79,8 +81,10 @@ const InternshipCourse = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <div className="ud-section-title mx-auto">
-            <span className="text-blue-600 font-semibold mb-2 block">Internships</span>
-            <h2 className="text-3xl font-bold mb-4">Our Internships</h2>
+            <span
+                  className="text-lg sm:text-xl lg:text-4xl  font-bold mt-4 text-gradient bg-clip-text   text-purple-600 text-center hover:text-white transition-colors duration-300"
+                  >Internships</span>
+            <h2 className="text-xl font-bold mt-2 mb-2">Our Internships</h2>
             <p className="font-semibold mb-2 block">
               Our internships offer hands-on experience in various fields, including Web Development, Machine Learning, Data Science, and more. Interns will work on real-world projects, collaborate with industry experts, and gain valuable insights into their respective fields.
             </p>

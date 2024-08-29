@@ -21,7 +21,7 @@ const Webpage = () => {
         />
              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
           <h1 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
-          Best Software Development Services
+          WEB Design & Development Company
           </h1>
         </div>
       </motion.div>

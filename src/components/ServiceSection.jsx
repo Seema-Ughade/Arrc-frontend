@@ -8,9 +8,6 @@ import AiImage from '../assets/AiImage.jpg'
 import AiImage2 from '../assets/AiImage2.jpg'
 import AiImage3 from '../assets/AiImage3.jpg'
 import AiImage4 from '../assets/AiImage4.jpg'
-import digitalmarketing from '../assets/digitalmarketing.jpg';
-import webdevelopment from '../assets/webdevelopment.jpg';
-import appdevelopment from '../assets/appdevelopment.jpg';
 import softwaredevelopment from '../assets/softwaredevelopment.jpg';
 import ecommercesolution from '../assets/ecommercesolution.jpg';
 
@@ -102,7 +99,7 @@ const ServiceSection = () => {
                   <Link to={service.link}>{service.title}</Link>
                 </motion.h3 >
                 <motion.p whileHover={{ color: '#8B5CF6' }} // Purple color on hover
-                  className="mt-2 text-gray-400 text-sm">{service.description}</motion.p>
+                  className="mt-2 text-white ">{service.description}</motion.p>
                 <Link
                   to={service.link}
                   className="inline-block  bg-purple-600 hover:bg-gray-500   text-white hover:bg-gradient-to-l  rounded-3xl w-[80%] px-3 py-1.5 text-center mt-4 transition-all duration-300"

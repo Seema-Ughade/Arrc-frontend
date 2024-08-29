@@ -57,30 +57,30 @@ const InternshipInfo = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-gray-50">
+    <div className="relative min-h-screen ">
       <div className="container mx-auto px-6 py-12">
         <button
           onClick={() => navigate('/internshipCourse')}
-          className="bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700 mb-8"
+          className="bg-purple-600 text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700 mb-8"
         >
           Back
         </button>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid  grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Side: Internship Details */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">{title}</h2>
-            <p className="text-gray-600 mb-4">{overview}</p>
+          <div className=" p-8 bg-gray-900 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
+            <p className="text-white mb-4">{overview}</p>
             <ul className="list-disc pl-5 space-y-2">
               {details?.map((detail, index) => (
-                <li key={index} className="text-gray-600">{detail}</li>
+                <li key={index} className="text-white">{detail}</li>
               ))}
             </ul>
           </div>
 
           {/* Right Side: Application Form */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Apply for {title}</h2>
+          <div className="  bg-gray-900 p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold text-purple-600 mb-6">Apply for {title}</h2>
             <Formik
               initialValues={{ name: '', city: '', mobile: '', email: '', techSkills: '', mode: '', education: '', cv: null }}
               validationSchema={validationSchema}
@@ -90,7 +90,7 @@ const InternshipInfo = () => {
                 <Form>
                   <div className="space-y-6">
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Name</label>
+                      <label className="block text-white font-medium mb-2">Name</label>
                       <Field
                         type="text"
                         name="name"
@@ -100,7 +100,7 @@ const InternshipInfo = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">City</label>
+                      <label className="block text-white font-medium mb-2">City</label>
                       <Field
                         type="text"
                         name="city"
@@ -110,7 +110,7 @@ const InternshipInfo = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Mobile Number</label>
+                      <label className="block text-white font-medium mb-2">Mobile Number</label>
                       <Field
                         type="text"
                         name="mobile"
@@ -119,8 +119,8 @@ const InternshipInfo = () => {
                       <ErrorMessage name="mobile" component="div" className="text-red-500 text-sm mt-1" />
                     </div>
                     
-                    <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Email</label>
+                    <div className="mb-4">text-white
+                      <label className="block text-white font-medium mb-2">Email</label>
                       <Field
                         type="email"
                         name="email"
@@ -130,7 +130,7 @@ const InternshipInfo = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Tech Skills</label>
+                      <label className="block text-white font-medium mb-2">Tech Skills</label>
                       <Field
                         type="text"
                         name="techSkills"
@@ -140,7 +140,7 @@ const InternshipInfo = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Mode (Online / Offline)</label>
+                      <label className="block text-white font-medium mb-2">Mode (Online / Offline)</label>
                       <Field
                         as="select"
                         name="mode"
@@ -154,7 +154,7 @@ const InternshipInfo = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">Education</label>
+                      <label className="block text-white font-medium mb-2">Education</label>
                       <Field
                         type="text"
                         name="education"
@@ -164,7 +164,7 @@ const InternshipInfo = () => {
                     </div>
                     
                     <div className="mb-4">
-                      <label className="block text-gray-700 font-medium mb-2">CV Upload (Max 1MB)</label>
+                      <label className="block text-white font-medium mb-2">CV Upload (Max 1MB)</label>
                       <input
                         type="file"
                         name="cv"
@@ -177,7 +177,7 @@ const InternshipInfo = () => {
                     
                     <button
                       type="submit"
-                      className="bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700"
+                      className="bg-purple-600 text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700"
                     >
                       Apply Now
                     </button>

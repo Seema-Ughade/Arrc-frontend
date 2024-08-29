@@ -132,21 +132,29 @@ const Login = ({ setIsAuthenticated }) => {
     });
 
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-50">
+        <div className="flex justify-center items-center min-h-screen ">
             <div className="w-full max-w-2xl bg-white rounded-lg shadow-lg flex">
                 {/* Login Form */}
                 <form onSubmit={formik.handleSubmit} className="w-full p-8 space-y-6">
                     <h1 className="text-3xl font-bold text-gray-900">Login</h1>
                     <div className="flex space-x-4 mb-6">
-                        <a href="#" className="text-gray-600 hover:text-blue-600">
+                        <a href="#" className="text-purple-600 hover:text-blue-600">
                             <i className="fa fa-facebook-square text-2xl"></i>
                         </a>
-                        <a href="#" className="text-gray-600 hover:text-blue-400">
+                        <a href="#" className="text-purple-600 hover:text-blue-400">
                             <i className="fa fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" className="text-purple-600 hover:text-blue-600">
+                            <i className="fa fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" className="text-purple-600 hover:text-blue-400">
+                            <i className="fa fa-linkedin text-2xl"></i>
                         </a>
                     </div>
                     <p className="text-gray-600 mb-4">or use your account</p>
                     <div>
+                    <label className='mb-2 '>Email</label>
+
                         <input
                             type="email"
                             name="email"
@@ -161,6 +169,7 @@ const Login = ({ setIsAuthenticated }) => {
                         ) : null}
                     </div>
                     <div>
+                        <label className='mb-2'>Password</label>
                         <input
                             type="password"
                             name="password"
@@ -174,13 +183,13 @@ const Login = ({ setIsAuthenticated }) => {
                             <div className="text-red-600 text-sm mt-1">{formik.errors.password}</div>
                         ) : null}
                     </div>
-                    <p className="text-sm text-blue-600 cursor-pointer hover:underline">Forgot your Password?</p>
-                    <button type="submit" className="w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <p className="text-sm text-purple-600 cursor-pointer hover:underline">Forgot your Password?</p>
+                    <button type="submit" className="w-full py-2 bg-purple-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
                         LOG IN
                     </button>
                 </form>
                 {/* Info Section */}
-                <div className="w-1/2 bg-blue-600 text-white rounded-r-lg flex flex-col items-center justify-center p-8">
+                <div className="w-1/2 bg-purple-600 text-white rounded-r-lg flex flex-col items-center justify-center p-8">
                     <h4 className="text-xl font-semibold mb-4">Welcome Back</h4>
                     <p className="text-sm text-center">Please login to access your dashboard. If you don't have an account, you can sign up here.</p>
                 </div>
