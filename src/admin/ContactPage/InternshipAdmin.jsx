@@ -95,6 +95,9 @@
 // };
 
 // export default InternshipAdmin;
+
+
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Table, Button } from 'antd';
@@ -129,7 +132,7 @@ const InternshipAdmin = () => {
 
   const deleteApplication = async (id) => {
     try {
-      await axios.delete(`https://arrc-backend.onrender.com/v1/internships/internshipApplications/${id}`);
+      await axios.delete(`https://arrc-backend.onrender.com/api/v1/internships/internshipApplications/${id}`);
       setApplications(applications.filter(application => application._id !== id));
       toast.success('Application deleted successfully!');
     } catch (error) {
