@@ -9,7 +9,7 @@ const CourseAdmin = () => {
   useEffect(() => {
     const fetchApplications = async () => {
       try {
-        const response = await axios.get('https://arrc-backend.onrender.com/api/v1/courses/courseApplications'); // Updated endpoint
+        const response = await axios.get('https://arrc-backend.onrender.com/api/v1/courses/courseApplications');
         setApplications(response.data);
       } catch (error) {
         setError('Error fetching applications. Please try again.');
@@ -21,6 +21,15 @@ const CourseAdmin = () => {
 
     fetchApplications();
   }, []);
+
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`https://arrc-backend.onrender.com/api/v1/courses/courseApplications/${id}`);
+      setApplications(applications.filter(app => app._id !== id));
+    } catch (error) {
+      console.error('Error deleting application:', error);
+    }
+  };
 
   if (loading) {
     return <div className="container mx-auto p-6">Loading...</div>;
@@ -43,6 +52,7 @@ const CourseAdmin = () => {
             <th className="py-2 px-4 border-b">Course Name</th>
             <th className="py-2 px-4 border-b">Mode</th>
             <th className="py-2 px-4 border-b">Date</th>
+            <th className="py-2 px-4 border-b">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -56,11 +66,19 @@ const CourseAdmin = () => {
                 <td className="py-2 px-4 border-b">{app.courseName}</td>
                 <td className="py-2 px-4 border-b">{app.mode}</td>
                 <td className="py-2 px-4 border-b">{new Date(app.date).toLocaleDateString()}</td>
+                <td className="py-2 px-4 border-b">
+                  <button 
+                    className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+                    onClick={() => handleDelete(app._id)}
+                  >
+                    Delete
+                  </button>
+                </td>
               </tr>
             ))
           ) : (
             <tr>
-              <td colSpan="7" className="py-2 px-4 border-b text-center">No applications found</td>
+              <td colSpan="8" className="py-2 px-4 border-b text-center">No applications found</td>
             </tr>
           )}
         </tbody>

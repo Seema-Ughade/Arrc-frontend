@@ -38,8 +38,7 @@ function HeroPage() {
                 </span>
               </div>
               <h2 className=" mb-3 text-[4vw] md:text-[6vw] lg:text-[30px]">
-                "AI and automation are transforming industries,<br /> driving efficiency, and opening up<br /> new possibilities for creativity and innovation in ways we never imagined."
-              </h2>
+              "Empowering the future with AI and automation,<br /> we are revolutionizing industries, enhancing productivity,<br /> and unlocking unprecedented potential for innovation."</h2>
             </div>
         </div>
         <div className="carousel-item">
@@ -51,7 +50,7 @@ function HeroPage() {
                 </span>
               </div>
               <h2 className=" mb-3 text-[4vw] md:text-[6vw] lg:text-[30px]">
-                "AI and automation are transforming industries,<br /> driving efficiency, and opening up<br /> new possibilities for creativity and innovation in ways we never imagined."
+              "Redefining what's possible with AI and automation,<br /> we are pioneering a new era of innovation,<br /> where technology meets limitless potential."
               </h2>
             </div>
         </div>
