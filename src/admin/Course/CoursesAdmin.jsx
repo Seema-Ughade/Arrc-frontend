@@ -270,7 +270,7 @@ const CourseAdmin = () => {
                     <DeleteOutlined />
                   </button>
                   <button
-                    className="bg-green-500 text-white px-3 py-1 rounded hover:bg-blue-600 flex items-center"
+                    className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 flex items-center"
                     onClick={() => handleEdit(app)}
                   >
                     <EditOutlined />
