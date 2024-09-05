@@ -169,7 +169,7 @@ const InternshipInfo = () => {
                         type="file"
                         name="cv"
                         onChange={(event) => setFieldValue('cv', event.target.files[0])}
-                        className="form-input mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"
+                        className="form-input text-white mt-1 block w-full px-3 py-2 border rounded-md shadow-sm"
                         accept=".pdf,.doc,.docx"
                       />
                       <ErrorMessage name="cv" component="div" className="text-red-500 text-sm mt-1" />
