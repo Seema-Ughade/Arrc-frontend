@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 // import seo from '../assets/seo.jpg';
-import AiImage from '../assets/AiImage.jpg'
-import AiImage2 from '../assets/AiImage2.jpg'
-import AiImage3 from '../assets/AiImage3.jpg'
-import AiImage4 from '../assets/AiImage4.jpg'
-import softwaredevelopment from '../assets/softwaredevelopment.jpg';
-import ecommercesolution from '../assets/ecommercesolution.jpg';
+import seoimagenew from '../assets/seoimagenew.jpg'
+import digitalImage from '../assets/digitalImage.jpg'
+import webdevimagenew from '../assets/webdevimagenew.jpeg'
+import appdev23 from '../assets/appdev23.avif'
+import softdev24 from '../assets/softdev24.jpg';
+import ecomImg from '../assets/ecomImg.jpg';
 
 // Define animation variants
 const cardVariants = {
@@ -28,12 +28,39 @@ const containerVariants = {
 };
 
 const services = [
-  { img: AiImage, title: "SEO/SEM Solutions", description: "Our customer-centric approach makes us a unique solutions provider for website designing & development. Our expert development team is specialized in building static, dynamic, functional, responsive, SEO Friendly & user-friendly websites.", link: "/seo-solution" },
-  { img: AiImage2, title: "Digital Marketing", description: "Our customer-centric approach makes us a unique solutions provider for website designing & development. Our expert development team is specialized in building static, dynamic, functional, responsive, SEO Friendly & user-friendly websites.", link: "/digital-marketing" },
-  { img: AiImage3, title: "Website Development", description: "Our customer-centric approach makes us a unique solutions provider for website designing & development. Our expert development team is specialized in building static, dynamic, functional, responsive, SEO Friendly & user-friendly websites.", link: "/website-development" },
-  { img: AiImage4, title: "App Development", description: "We develop apps that stand out from the crowd. We are a fast-growing mobile application development firm, working closely with clients to understand their requirements & suggest cost-effective, scalable & robust mobile solutions.", link: "/app-development" },
-  { img: softwaredevelopment, title: "Software Development", description: "Our customer-centric approach makes us a unique solutions provider for website designing & development. Our expert development team is specialized in building static, dynamic, functional, responsive, SEO Friendly & user-friendly websites.", link: "/software-development" },
-  { img: ecommercesolution, title: "E-Commerce Solutions", description: "Our customer-centric approach makes us a unique solutions provider for website designing & development. Our expert development team is specialized in building static, dynamic, functional, responsive, SEO Friendly & user-friendly websites.", link: "/ecommerce-solution" },
+  { img: seoimagenew, title: "SEO/SEM Solutions", 
+    description: 
+"Elevate your digital presence with our SEO/SEM solutions. We excel in optimizing search engine rankings and managing targeted ad campaigns to drive traffic and boost visibility. Our strategic approach delivers measurable results."
+  , link: "/seo-solution" },
+
+  { img: digitalImage, title: "Digital Marketing", description: 
+"Unlock the potential of digital marketing with our expert strategies. We craft customized SEO and SEM solutions to enhance your online presence. Our targeted ad campaigns drive growth and engagement. Data-driven insights ensure optimal results and impact."
+
+
+
+
+
+
+
+, link: "/digital-marketing" },
+
+
+  { img: webdevimagenew, title: "Website Development", description: 
+"Transform your vision into a powerful website with our expert team. We craft static and dynamic sites that are responsive and SEO-friendly. Our focus is on user-friendly, functional designs for a seamless experience. Tailored solutions to meet your needs."
+    , link: "/website-development" },
+
+  { img: appdev23, title: "App Development", description: 
+    "We develop apps that stand out from the crowd. We are a fast-growing mobile application development firm, working closely with clients to understand their requirements & suggest cost-effective, scalable & robust mobile solutions."
+    , link: "/app-development" },
+    
+  { img: softdev24, title: "Software Development", description: 
+"Optimize your operations with our custom software solutions. We design and develop scalable software that meets your specific needs. Our development process ensures robust, efficient, and user-friendly software to enhance productivity and drive innovation."
+
+    , link: "/software-development" },
+  { img: ecomImg, title: "E-Commerce Solutions", description: 
+"Elevate your online store with our e-commerce solutions. We create secure, user-friendly, and responsive platforms tailored to your needs. Our focus is on enhancing user experience, optimizing transactions, and driving sales through effective strategies."
+
+    , link: "/ecommerce-solution" },
 ];
 
 const ServiceSection = () => {
