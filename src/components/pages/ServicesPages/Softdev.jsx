@@ -64,7 +64,7 @@ const SoftDev = () => {
             Best Software Development Services
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-4">
-            Quality is our prime motto as qualitative work always counts. Bizzfly guarantees quality parameters to be carried accordingly, ensuring the performance of your business apps, mobile apps, and website design.
+            Quality is our prime motto as qualitative work always counts. Arrc Technology guarantees quality parameters to be carried accordingly, ensuring the performance of your business apps, mobile apps, and website design.
           </p>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6">
             We have a professional approach to offer a complete suite of software development and management services using modern technical infrastructure and advanced design principles. Our IT strategists are fanatic about delivering software solutions aimed at driving exceptional business value.

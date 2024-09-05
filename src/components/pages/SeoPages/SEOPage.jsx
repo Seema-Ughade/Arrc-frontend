@@ -24,7 +24,7 @@
 //                         Using search engines as a channel for increasing happy customers, our aim is to give your website a good position in popular search engine results page lists.
 //                     </p>
 //                     <p className="text-lg mb-4 leading-[1.7] font-normal text-[#4C4C4D] antialiased transition-opacity duration-500 hover:opacity-80">
-//                         Search Engines are the most effective way to get your website noticed by potential customers. Bizzfly provides the best organic SEO services in Pune at affordable prices. We are Fastest Growing and Most Awarded Full-Service SEO Company.
+//                         Search Engines are the most effective way to get your website noticed by potential customers. Arrc Technology provides the best organic SEO services in Pune at affordable prices. We are Fastest Growing and Most Awarded Full-Service SEO Company.
 //                     </p>
 //                     <p className="text-lg mb-4 leading-[1.7] font-normal text-[#4C4C4D] antialiased transition-opacity duration-500 hover:opacity-80">
 //                         We offer guaranteed SEO services. Complete Website Analysis. We, with an in-depth review of your site, find out weaknesses & strengths and discover why the site is not fulfilling peak efficiency. We deliver results for companies around the world so if you want Profit by Search Pune’s no 1 SEO Firm to help with your big plans then we would love to chat about Pune’s Premium SEO Services Offering.
@@ -79,7 +79,7 @@
 //                     A keyword analysis is performed for both SEO and SEM, but not necessarily at the same time. SEM and SEO both need to be monitored and updated frequently to reflect evolving best practices.
 //                 </p>
 //                 <p className="text-lg mb-4 leading-[1.7] text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80">
-//                     Bizzfly is a fastest growing Search Engine Marketing Agency in Pune which mainly focuses on providing the best quality SEM services to the clients. Our mission at Bizzfly is to bloom as an eminent SEM agency in Pune, in this vastly spreading era of digital marketing by delivering the best quality Search Engine Marketing Services to our clients and maintain our reputation by making a balance between guaranteed results and client satisfaction.
+//                     Arrc Technology is a fastest growing Search Engine Marketing Agency in Pune which mainly focuses on providing the best quality SEM services to the clients. Our mission at Arrc Technology is to bloom as an eminent SEM agency in Pune, in this vastly spreading era of digital marketing by delivering the best quality Search Engine Marketing Services to our clients and maintain our reputation by making a balance between guaranteed results and client satisfaction.
 //                 </p>
 //             </div>
 //         </div>
@@ -131,7 +131,7 @@ const SEOPage = () => {
                         transition={{ duration: 0.6, delay: 0.4 }}
                         className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed font-normal text-[#4C4C4D] antialiased transition-opacity duration-500 hover:opacity-80"
                     >
-                        Search Engines are the most effective way to get your website noticed by potential customers. Bizzfly provides the best organic SEO services in Pune at affordable prices. We are Fastest Growing and Most Awarded Full-Service SEO Company.
+                        Search Engines are the most effective way to get your website noticed by potential customers. Arrc Technology provides the best organic SEO services in Pune at affordable prices. We are Fastest Growing and Most Awarded Full-Service SEO Company.
                     </motion.p>
                     <motion.p 
                         initial={{ opacity: 0, y: 20 }} 
@@ -241,7 +241,7 @@ const SEOPage = () => {
                     transition={{ duration: 0.6, delay: 1.2 }}
                     className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80"
                 >
-                    Bizzfly is a fastest growing Search Engine Marketing Agency in Pune which mainly focuses on providing the best quality SEM services to the clients. Our mission at Bizzfly is to bloom as an eminent SEM agency in Pune, in this vastly spreading era of digital marketing by delivering the best quality Search Engine Marketing Services to our clients and maintain our reputation by making a balance between guaranteed results and client satisfaction.
+                    Arrc Technology is a fastest growing Search Engine Marketing Agency in Pune which mainly focuses on providing the best quality SEM services to the clients. Our mission at Arrc Technology is to bloom as an eminent SEM agency in Pune, in this vastly spreading era of digital marketing by delivering the best quality Search Engine Marketing Services to our clients and maintain our reputation by making a balance between guaranteed results and client satisfaction.
                 </motion.p>
             </motion.div>
         </div>

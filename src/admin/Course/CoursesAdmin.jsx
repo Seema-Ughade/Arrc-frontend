@@ -96,7 +96,7 @@ const CourseAdmin = () => {
   useEffect(() => {
     const fetchApplications = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:5000/api/v1/courses/courseApplications');
+        const response = await axios.get('https://arrc-backend.onrender.com/api/v1/courses/courseApplications');
         setApplications(response.data);
       } catch (error) {
         setError('Error fetching applications. Please try again.');
@@ -111,7 +111,7 @@ const CourseAdmin = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://127.0.0.1:5000/api/v1/courses/courseApplications/${id}`);
+      await axios.delete(`https://arrc-backend.onrender.com/api/v1/courses/courseApplications/${id}`);
       setApplications(applications.filter(app => app._id !== id));
     } catch (error) {
       console.error('Error deleting application:', error);
@@ -142,7 +142,7 @@ const CourseAdmin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://127.0.0.1:5000/api/v1/courses/courseApplications/${editingApplication._id}`, formData);
+      await axios.put(`https://arrc-backend.onrender.com/api/v1/courses/courseApplications/${editingApplication._id}`, formData);
       setApplications(applications.map(app =>
         app._id === editingApplication._id ? { ...app, ...formData } : app
       ));

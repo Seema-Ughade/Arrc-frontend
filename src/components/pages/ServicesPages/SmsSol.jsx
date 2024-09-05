@@ -83,14 +83,14 @@ const SmsSol = () => {
         </h2>
 
         <p className="mb-4">
-          Bizzfly is one of the leading and reliable bulk SMS service providers in Pune. Bizzfly Solutions offers various SMS services like Transactional bulk SMS, Promotional bulk SMS, and voice SMS in your city Pune. Many organizations and companies have used our SMS gateway and are 100% satisfied. For sending SMS, there is no need for any mobile device; rather, you can send SMS using your computer. Just an internet connection is needed to send SMS via the internet. Thus, sometimes this message service is called web SMS service.
+          Arrc Technology is one of the leading and reliable bulk SMS service providers in Pune. Arrc Technology Solutions offers various SMS services like Transactional bulk SMS, Promotional bulk SMS, and voice SMS in your city Pune. Many organizations and companies have used our SMS gateway and are 100% satisfied. For sending SMS, there is no need for any mobile device; rather, you can send SMS using your computer. Just an internet connection is needed to send SMS via the internet. Thus, sometimes this message service is called web SMS service.
         </p>
         <h2 className="text-2xl font-semibold text-purple-600">
-          Why Bizzfly for Bulk SMS Service in Pune?
+          Why Arrc Technology for Bulk SMS Service in Pune?
         </h2>
         <ul className="list-disc pl-6 mt-4">
           <li>Directly connected with Vodafone, Idea, Airtel</li>
-          <li>Bizzfly has its own infrastructure</li>
+          <li>Arrc Technology has its own infrastructure</li>
           <li>Dedicated and strong support team</li>
           <li>Experienced technical experts for application management</li>
           <li>High configuration SMPP server with 100% uptime</li>

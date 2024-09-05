@@ -75,13 +75,13 @@ const DigitalMr = () => {
           Digital Media Marketing Services
         </h1>
         <p className="text-lg mb-4 leading-[1.8] font-normal text-[#E8E8E8]">
-          Grow your online presence with the best result-driven Digital Marketing Agency. Bizzfly offers solutions for SEO, SEM, PPC, ORM, Lead Generation campaigns along with innovative digital solutions.
+          Grow your online presence with the best result-driven Digital Marketing Agency. Arrc Technology offers solutions for SEO, SEM, PPC, ORM, Lead Generation campaigns along with innovative digital solutions.
         </p>
         <p className="text-lg mb-4 leading-[1.8] font-normal text-[#E8E8E8]">
           Digital marketing is the marketing of products or services using digital technologies and media, mainly on the internet. It covers advertising through online channels such as search engines, websites, social media, email, mobile apps, and other digital mediums.
         </p>
         <p className="text-lg mb-4 leading-[1.8] font-normal text-[#E8E8E8]">
-          Digital marketing focuses on engaging with customers and growing your business. It plays a significant role for both customers and companies. Bizzfly provides synergistic platforms as per the customer's requirements, believing in long-term commitment to attract new prospects, build brand awareness, and generate leads.
+          Digital marketing focuses on engaging with customers and growing your business. It plays a significant role for both customers and companies. Arrc Technology provides synergistic platforms as per the customer's requirements, believing in long-term commitment to attract new prospects, build brand awareness, and generate leads.
         </p>
       </motion.div>
 

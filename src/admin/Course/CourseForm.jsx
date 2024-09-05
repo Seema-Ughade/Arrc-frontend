@@ -25,7 +25,7 @@ const CourseForm = () => {
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      await axios.post('http://127.0.0.1:5000/api/v1/courses/courseApplications', values);
+      await axios.post('https://arrc-backend.onrender.com/api/v1/courses/courseApplications', values);
       toast.success('Application submitted successfully!');
       resetForm();
     } catch (error) {

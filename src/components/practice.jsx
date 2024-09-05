@@ -50,7 +50,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex items-center space-x-4 text-sm">
                         <ul className="flex space-x-4">
-                            <li><a href="mailto:info@bizzfly.com" className="text-white"><i className="fa fa-envelope"></i> info@bizzfly.com</a></li>
+                            <li><a href="mailto:info@Arrc Technology.com" className="text-white"><i className="fa fa-envelope"></i> info@Arrc Technology.com</a></li>
                             <li className='text-white'><i className="fa fa-map-marker-alt"></i> Katraj, Pune 411043</li>
                         </ul>
                     </div>

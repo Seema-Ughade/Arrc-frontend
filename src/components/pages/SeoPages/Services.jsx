@@ -26,7 +26,7 @@ const Services = () => {
           <h2 className="text-2xl font-bold mb-8">Best SEO Services for Optimal Results</h2>
           <p className="text-gray-600 mb-6">
             Using search engines as a channel for increasing happy customers, our aim is to give your website a good position in popular search engine results page lists.
-            Search Engines are the most effective way to get your website noticed by potential customers. Bizzfly provides the best organic SEO services in Pune at affordable prices. We are Fastest Growing and Most Awarded Full-Service SEO Company.
+            Search Engines are the most effective way to get your website noticed by potential customers. Arrc Technology provides the best organic SEO services in Pune at affordable prices. We are Fastest Growing and Most Awarded Full-Service SEO Company.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {seoServices.map((service, index) => (
@@ -54,7 +54,7 @@ const Services = () => {
             A keyword analysis is performed for both SEO and SEM, but not necessarily at the same time. SEM and SEO both need to be monitored and updated frequently to reflect evolving best practices.
           </p>
           <p className="text-gray-600">
-            Bizzfly is a fastest growing Search Engine Marketing Agency in Pune which mainly focuses on providing the best quality SEM services to the clients. Our mission at Bizzfly is to bloom as an eminent SEM agency in Pune, in this vastly spreading era of digital marketing by delivering the best quality Search Engine Marketing Services to our clients and maintain our reputation by making a balance between guaranteed results and client satisfaction.
+            Arrc Technology is a fastest growing Search Engine Marketing Agency in Pune which mainly focuses on providing the best quality SEM services to the clients. Our mission at Arrc Technology is to bloom as an eminent SEM agency in Pune, in this vastly spreading era of digital marketing by delivering the best quality Search Engine Marketing Services to our clients and maintain our reputation by making a balance between guaranteed results and client satisfaction.
           </p>
         </div>
       </section>

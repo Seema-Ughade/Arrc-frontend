@@ -52,10 +52,10 @@ const AppDev = () => {
                 We Build Mobile Apps for Every User, Every Platform &amp; Every Industry.
               </p>
               <p className="text-base md:text-lg text-gray-400 leading-relaxed mb-4">
-                Smartphones, based on both Android and iPhone systems, have gained quite a lot of popularity. People use their phones not only to talk and send messages but also to browse the internet and do online shopping. This has made it necessary to have an Android/iPhone app related to your business. If you are looking for an Android/iPhone application development company, your search ends at Bizzfly.
+                Smartphones, based on both Android and iPhone systems, have gained quite a lot of popularity. People use their phones not only to talk and send messages but also to browse the internet and do online shopping. This has made it necessary to have an Android/iPhone app related to your business. If you are looking for an Android/iPhone application development company, your search ends at Arrc Technology.
               </p>
               <p className="text-base md:text-lg text-gray-400 leading-relaxed mb-4">
-                Bizzfly boasts a team of skilled experts who have years of experience in developing mobile applications for Android as well as iPhone, be it tablets, phones, or phablets. Our team is up to date with the latest technology in mobile application development and uses the latest tools for this purpose. We follow a customer-centric approach to make sure that you receive an app that works well for your customers as well as your business.
+                Arrc Technology boasts a team of skilled experts who have years of experience in developing mobile applications for Android as well as iPhone, be it tablets, phones, or phablets. Our team is up to date with the latest technology in mobile application development and uses the latest tools for this purpose. We follow a customer-centric approach to make sure that you receive an app that works well for your customers as well as your business.
               </p>
             </motion.div>
 
@@ -105,7 +105,7 @@ const AppDev = () => {
               </ul>
             </motion.div>
 
-            {/* Why Choose Bizzfly */}
+            {/* Why Choose Arrc Technology */}
             <motion.div
               className='text-left'
               initial={{ y: 50, opacity: 0 }}
@@ -114,7 +114,7 @@ const AppDev = () => {
               data-aos="fade-up"
             >
               <h5 className="text-xl md:text-2xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 leading-tight antialiased">
-                Why Bizzfly for Mobile Application Development?
+                Why Arrc Technology for Mobile Application Development?
               </h5>
               <ul className="list-disc list-inside pl-5 text-base md:text-lg text-gray-400">
                 <li>End-to-End Solutions - App Discovery to App Maintenance</li>

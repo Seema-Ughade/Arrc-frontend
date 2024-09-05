@@ -162,7 +162,7 @@ const Contact = () => {
                             <div className="inner-box p-4">
                                 <span className="name text-lg text-purple-600 font-semibold">Message</span>
                                 <span className="info block mt-2 text-white">
-                                    <a href="mailto:info@bizzfly.com">arrctechnology15@gmail.com</a>
+                                    <a href="mailto:info@Arrc Technology.com">arrctechnology15@gmail.com</a>
                                 </span>
                             </div>
                         </div>

@@ -45,7 +45,7 @@ const AboutSection = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            We assure you the best innovative and creative solutions for digital marketing and web development. We promise to deliver cost-effective online marketing solutions to maximize your profit. Bizzfly stands out from traditional marketing agencies by focusing on 100% customer satisfaction and results-oriented marketing in the digital world.
+            We assure you the best innovative and creative solutions for digital marketing and web development. We promise to deliver cost-effective online marketing solutions to maximize your profit. Arrc Technology stands out from traditional marketing agencies by focusing on 100% customer satisfaction and results-oriented marketing in the digital world.
           </motion.p>
           <motion.p
             className="text-base sm:text-lg mb-4"
@@ -131,7 +131,7 @@ const AboutSection = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Bizzfly is committed to delivering services with an emphasis on continuous improvement, a pro-active approach, courtesy, timely response, and accuracy, aiming for total customer satisfaction.
+              Arrc Technology is committed to delivering services with an emphasis on continuous improvement, a pro-active approach, courtesy, timely response, and accuracy, aiming for total customer satisfaction.
             </motion.p>
           </div>
         </div>

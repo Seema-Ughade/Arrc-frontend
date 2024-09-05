@@ -54,7 +54,7 @@ const About = () => {
                 </motion.div>
               </div>
               <p className="text-white mb-4">
-                Bizzfly is the best Digital Marketing and Website Development Company. It's different from your traditional marketing agency.
+                Arrc Technology is the best Digital Marketing and Website Development Company. It's different from your traditional marketing agency.
               </p>
               <Link to="/about" className="inline-flex items-center px-6 py-2 bg-purple-600 text-white font-semibold rounded-lg shadow-md hover:bg-gradient-to-l hover:from-blue-500 hover:via-pink-500 hover:to-purple-500 transition-all duration-300">
                 <span>Read More</span>
