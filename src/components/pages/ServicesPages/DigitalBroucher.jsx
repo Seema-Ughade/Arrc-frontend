@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
-import digitalbrochurebg from '../../../assets/digitalbrochurebg.jpg'; // Replace with the actual path to your image
+import bgiamgenewone from '../../../assets/bgiamgenewone.jpg'; // Replace with the actual path to your image
 
 const DigitalBroucher = () => {
   useEffect(() => {
@@ -31,18 +31,23 @@ const DigitalBroucher = () => {
     <div className="space-y-12 px-4 py-8  text-white">
       {/* Full-Width Background Image */}
       <motion.div
-        className="relative w-full h-[35vh] mx-[-10px] mb-12"
-        variants={fadeInUp}
-        initial="hidden"
-        animate="visible"
+        className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        data-aos="fade-up"
       >
         <img
-          src={digitalbrochurebg}
-          alt="Digital Brochure"
-          className="w-full h-full object-cover rounded-lg shadow-lg"
+          src={bgiamgenewone}
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
         />
+             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+          <h1 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
+          Digital Brochure
+          </h1>
+        </div>
       </motion.div>
-
       {/* Heading Section */}
       <motion.div
         className="text-center heading"

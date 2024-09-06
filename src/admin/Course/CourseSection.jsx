@@ -11,29 +11,45 @@ const CourseCard = ({ title, overview, details, popular }) => {
   };
 
   return (
-    <div className="border-2 bg-gray-800 border-[#d4deff] rounded-lg p-[45px] px-[30px] text-center shadow-lg mb-10 relative animate-fadeInUp box-border">
+    <div className="border-2 bg-gray-800 border-[#d4deff] rounded-lg p-[45px] px-[30px] text-center h-[420px] shadow-lg mb-10 relative animate-fadeInUp box-border">
       {popular && (
         <span className="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full absolute top-2 right-2">
           POPULAR
         </span>
       )}
       <h3 
-                  className="text-lg sm:text-xl lg:text-2xl font-bold mt-4 text-gradient bg-clip-text   text-purple-600 text-center hover:text-white transition-colors duration-300"
+                  className="text-lg sm:text-xl lg:text-2xl font-bold mt-4 text-gradient bg-clip-text h-[70px]  text-purple-600 text-center hover:text-white transition-colors duration-300"
                   >{title}</h3>
-      <p className="mb-2">{overview}</p>
-      <div className="ud-course-body mb-4">
+      <p className="mb-2 h-[40px]">{overview}</p>
+      <div className="ud-course-body h-[100px] mb-4">
         <ul className="list-none p-0 m-0">
           {details.map((detail, index) => (
             <li key={index} className="mb-2">{detail}</li>
           ))}
         </ul>
       </div>
-      <button
+      {/* <button
                   className="inline-block  bg-purple-600 hover:bg-gray-500   text-white hover:bg-gradient-to-l  rounded-xl w-[50%] px-3 py-1.5 text-center mt-4 transition-all duration-300"
                   onClick={handleApplyClick}
       >
         Apply Now
-      </button>
+      </button> */}
+       <button
+              onClick={handleApplyClick}
+              className="inline-block bg-gradient-to-r h-[35px] from-purple-500 via-blue-600 to-black hover:from-black hover:via-blue-600 hover:to-purple-500 rounded-xl w-[60%] px-3 py-1.5 text-white text-center mt-4 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+              style={{
+                boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+                transition: "transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow = "0 0 20px rgba(173, 216, 230, 0.8)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
+              }}
+            >
+              Apply Now
+            </button>
     </div>
   );
 };
@@ -286,7 +302,7 @@ const CourseSection = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {courses.map((course, index) => (
             <CourseCard
               key={index}

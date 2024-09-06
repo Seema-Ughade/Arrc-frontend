@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
-import bulksmssolutionbg from '../../../assets/bulksmssolutionbg.jpg'; // Make sure the path is correct
+import bgiamgenewone from '../../../assets/bgiamgenewone.jpg'; // Make sure the path is correct
 
 const SmsSol = () => {
   useEffect(() => {
@@ -45,30 +45,25 @@ const SmsSol = () => {
     <div className="space-y-12 px-4 py-8  text-white">
       {/* Full-Width Background Image */}
       <motion.div
-        className="relative w-full h-[35vh] mx-[-10px] mb-12"
-        variants={fadeInUp}
-        initial="hidden"
-        animate="visible"
+        className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        data-aos="fade-up"
       >
         <img
-          src={bulksmssolutionbg}
-          alt="Digital Marketing"
-          className="w-full h-full object-cover rounded-lg shadow-lg"
+          src={bgiamgenewone}
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
         />
+             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+          <h1 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
+          Bulk SMS Solutions        </h1> 
+        </div>
       </motion.div>
 
       {/* Heading Section */}
-      <motion.div
-        className="text-center"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: 'easeOut' }}
-        data-aos="fade-up"
-      >
-        <h1 className="text-4xl font-bold text-purple-600 heading">
-          Low Cost Transactional and Promotional Bulk SMS Provider in Pune
-        </h1>
-      </motion.div>
+     
 
       {/* Content Section */}
       <motion.div

@@ -37,7 +37,7 @@ const Ecommerce = () => {
         />
              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
           <h1 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
-          Professional Ecommerce Web Development Company
+          Professional Ecommerce Web Development 
           </h1>
         </div>
       </motion.div>
@@ -52,7 +52,7 @@ const Ecommerce = () => {
       >
         <motion.div
           className="lg:w-1/2 flex justify-center animate"
-          initial={{ opacity: 0, x: 30 }}
+          initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           data-aos="fade-right"

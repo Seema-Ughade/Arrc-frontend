@@ -1,17 +1,29 @@
 import React from 'react';
-import cybersecbg from '../assets/cybersecbg.jpg'; // Adjust the path as necessary
+import cybersecurity from '../assets/cybersecurity.jpg'; // Adjust the path as necessary
+import { motion } from 'framer-motion';
 
 const CyberSecPage = () => {
   return (
     <div className="container mx-auto p-6  text-white">
       {/* Full Width Background Image Section */}
-      <div className="relative w-full h-[40vh] mb-12">
-        <img 
-          src={cybersecbg} 
-          alt="Cyber Security Background" 
-          className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105" 
+      <motion.div
+        className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        data-aos="fade-up"
+      >
+        <img
+          src={cybersecurity}
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
         />
-      </div>
+             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+          <h1 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
+          Best Cyber Security Services 
+          </h1>
+        </div>
+      </motion.div>
 
       {/* Content Section */}
       <div className="flex flex-col items-center mb-12 px-4 lg:px-0">

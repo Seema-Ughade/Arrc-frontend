@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import digitalbg from '../../../assets/digitalbg.jpg';
+import bgiamgenewone from '../../../assets/bgiamgenewone.jpg';
 import digitalmarketingpic from '../../../assets/digitalmarketingpic.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -55,13 +55,23 @@ const DigitalMr = () => {
   return (
     <div className="container mx-auto p-6  text-white">
       {/* Full Width Image with 1/4 Height */}
-      <motion.div 
-        className="relative w-full h-[35vh] mx-[-10px] mb-12"
-        variants={fadeInUp}
-        initial="hidden"
-        animate="visible"
+      <motion.div
+        className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        data-aos="fade-up"
       >
-        <img src={digitalbg} alt="Digital Marketing" className="w-full h-full object-cover rounded-lg shadow-lg" />
+        <img
+          src={bgiamgenewone}
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
+        />
+             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+          <h1 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
+          Digital Media Marketing Services
+          </h1>
+        </div>
       </motion.div>
 
       {/* Introduction Section */}
@@ -88,10 +98,7 @@ const DigitalMr = () => {
       {/* Advantages Section with Image */}
       <div className="flex flex-col lg:flex-row items-center mb-12">
         <motion.div 
-          className="lg:w-1/2 w-full mb-6 lg:mb-0 slide-in"
-          variants={slideIn}
-          initial="hidden"
-          animate="visible"
+          className="lg:w-1/2 w-full mb-6 lg:mb-0 "
         >
           <img src={digitalmarketingpic} alt="Digital Marketing Benefits" className="w-full h-auto object-cover rounded-lg shadow-lg" />
         </motion.div>

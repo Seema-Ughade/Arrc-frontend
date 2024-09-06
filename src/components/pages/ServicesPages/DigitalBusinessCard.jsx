@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
-import digitalbg from '../../../assets/digitalbg.jpg'; // Make sure the path is correct
+import bgiamgenewone from '../../../assets/bgiamgenewone.jpg'; // Make sure the path is correct
 
 const DigitalBusinessCard = () => {
   useEffect(() => {
@@ -29,16 +29,21 @@ const DigitalBusinessCard = () => {
     <div className="space-y-12 p-8">
       {/* Full-Width Background Image */}
       <motion.div
-        className="relative w-full h-[35vh] mb-12"
-        variants={fadeInUp}
-        initial="hidden"
-        animate="visible"
+        className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        data-aos="fade-up"
       >
         <img
-          src={digitalbg}
-          alt="Digital Business Card"
-          className="w-full h-full object-cover rounded-lg shadow-lg"
+          src={bgiamgenewone}
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
         />
+             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+          <h1 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
+           Digital Business Card          </h1>
+        </div>
       </motion.div>
 
       {/* First Section - Introduction */}
@@ -49,7 +54,8 @@ const DigitalBusinessCard = () => {
         transition={{ duration: 1 }}
         data-aos="fade-up"
       >
-        <h1 className="text-4xl font-bold mb-4">Interactive Digital Business Card</h1>
+        <h1 className="text-4xl font-semibold mb-4 text-[#9B59B6] leading-[1.2]">
+        Interactive Digital Business Card</h1>
         <p className="text-lg leading-relaxed">
           Business cards are a staple of the corporate and professional world. The usefulness of a business card is showing all of your contact details in a single, convenient location. Hand one to someone you meet, and you're more likely to continue the conversation later.
         </p>

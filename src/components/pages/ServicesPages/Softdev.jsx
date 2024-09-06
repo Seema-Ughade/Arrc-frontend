@@ -54,8 +54,8 @@ const SoftDev = () => {
 
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start">
         <motion.div
-          className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 animate"
-          initial={{ opacity: 0, x: 50 }}
+          className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-2 animate"
+          initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           data-aos="fade-left"
@@ -76,7 +76,7 @@ const SoftDev = () => {
 
         <motion.div
           className="lg:w-1/2 flex justify-center animate"
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           data-aos="fade-right"

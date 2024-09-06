@@ -92,19 +92,30 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Seoiamge from '../../../assets/Seoiamge.jpeg';
-import seobg from '../../../assets/seobg.jpg';
+import seoiamge from '../../../assets/seoiamge.jpg';
 
 const SEOPage = () => {
     return (
         <div className="container mx-auto p-6  text-white">
             {/* Full Width Image with 1/4 Height */}
-            <div className="relative w-full h-[35vh] mb-12">
-                <img 
-                    src={seobg} 
-                    alt="SEO Services" 
-                    className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105" 
-                />
-            </div>
+            <motion.div
+        className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        data-aos="fade-up"
+      >
+        <img
+          src={seoiamge}bgiamgenewone
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
+        />
+             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+          <h1 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
+          Best SEO Services for Optimal Results
+          </h1>
+        </div>
+      </motion.div>
 
             {/* First Section: Text Content Below Image */}
             <div className="flex flex-col items-center mb-12 px-4 lg:px-0">
@@ -145,7 +156,7 @@ const SEOPage = () => {
             </div>
 
             {/* Second Section: Image on the Left, Text on the Right */}
-            <div className="flex flex-col lg:flex-row items-center mb-12 px-4 lg:px-0">
+            <div className="flex flex-col lg:flex-row items-center mb-8 px-4 lg:px-0">
                 <motion.div 
                     initial={{ opacity: 0, x: -20 }} 
                     animate={{ opacity: 1, x: 0 }} 
@@ -180,15 +191,15 @@ const SEOPage = () => {
                     </motion.ul>
                 </motion.div>
                 <motion.div 
-                    initial={{ opacity: 0, x: 20 }} 
+                    initial={{ opacity: 0, x: 0 }} 
                     animate={{ opacity: 1, x: 0 }} 
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="lg:w-1/2 w-full mb-6 lg:mb-0 lg:order-last"
+                    className="lg:w-1/2 w-full mb-2 lg:mb-0 lg:order-last"
                 >
                     <img 
                         src={Seoiamge} 
                         alt="SEO Services" 
-                        className="w-[95%] h-[75%] ml-10 object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105" 
+                        className="w-[95%] h-[75%] lg:ml-10 object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105" 
                     />
                 </motion.div>
             </div>
