@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 // import seo from '../assets/seo.jpg';
 import seoimagenew from '../assets/seoimagenew.jpg'
-import digitalImage from '../assets/digitalImage.jpg'
+import digitalmarketingcard from '../assets/digitalmarketingcard.jpg'
 import webdevimagenew from '../assets/webdevimagenew.jpeg'
 import appdev23 from '../assets/appdev23.avif'
 import softdev24 from '../assets/softdev24.jpg';
-import ecomImg from '../assets/ecomImg.jpg';
+import eccomerce from '../assets/eccomerce.jpg';
 
 // Define animation variants
 const cardVariants = {
@@ -33,7 +33,7 @@ const services = [
 "Elevate your digital presence with our SEO/SEM solutions. We excel in optimizing search engine rankings and managing targeted ad campaigns to drive traffic and boost visibility. Our strategic approach delivers measurable results."
   , link: "/seo-solution" },
 
-  { img: digitalImage, title: "Digital Marketing", description: 
+  { img: digitalmarketingcard, title: "Digital Marketing", description: 
 "Unlock the potential of digital marketing with our expert strategies. We craft customized SEO and SEM solutions to enhance your online presence. Our targeted ad campaigns drive growth and engagement. Data-driven insights ensure optimal results and impact."
 
 
@@ -57,7 +57,7 @@ const services = [
 "Optimize your operations with our custom software solutions. We design and develop scalable software that meets your specific needs. Our development process ensures robust, efficient, and user-friendly software to enhance productivity and drive innovation."
 
     , link: "/software-development" },
-  { img: ecomImg, title: "E-Commerce Solutions", description: 
+  { img: eccomerce, title: "E-Commerce Solutions", description: 
 "Elevate your online store with our e-commerce solutions. We create secure, user-friendly, and responsive platforms tailored to your needs. Our focus is on enhancing user experience, optimizing transactions, and driving sales through effective strategies."
 
     , link: "/ecommerce-solution" },

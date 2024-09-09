@@ -34,6 +34,9 @@ const Navbar = () => {
         if (showSolutions) setShowSolutions(false);
 
     };
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+      };
 
     return (
         <>
@@ -50,7 +53,7 @@ const Navbar = () => {
                     <div className="container  sm:justify-center lg:justify-between md:justify-between flex items-center box-border   py-0 px-2 relative">
                         {/* Logo */}
                         <div className="demo-logo-vertical flex justify-start items-center space-x- bg-black dark:bg-gray-800">
-                            <Link to="/" onClick={handleLinkClick}>
+                            <Link to="/" onClick={() => { handleLinkClick(); scrollToTop(); }}>
                                 <img src={mainlogo} alt="Logo" className="h-24 object-contain" />
                             </Link>         <span
                                 className=" text-white text-2xl w-25  font-bold block  "
@@ -79,14 +82,14 @@ const Navbar = () => {
                                     <motion.li
                                         whileHover={{ scale: 1.05 }}
                                     >
-                                        <Link to="/home" className="hover:text-purple-700  px-4 py-2 rounded-md block text-center lg:text-left" onClick={handleLinkClick}>
+                                        <Link to="/home" className="hover:text-purple-700  px-4 py-2 rounded-md block text-center lg:text-left" onClick={() => { handleLinkClick(); scrollToTop(); }}>
                                             Home
                                         </Link>
                                     </motion.li>
                                     <motion.li
                                         whileHover={{ scale: 1.05 }}
                                     >
-                                        <Link to="/about" className="hover:text-purple-700  px-4 py-2 rounded-md block text-center lg:text-left" onClick={handleLinkClick}>
+                                        <Link to="/about" className="hover:text-purple-700  px-4 py-2 rounded-md block text-center lg:text-left" onClick={() => { handleLinkClick(); scrollToTop(); }}>
                                             About Us
                                         </Link>
                                     </motion.li>
@@ -122,16 +125,16 @@ const Navbar = () => {
                                                     className="relative"
                                                 >
                                                     <motion.li variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}>
-                                                        <Link to="/website-development" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={handleLinkClick}>Website Development</Link>
+                                                        <Link to="/website-development" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={() => { handleLinkClick(); scrollToTop(); }}>Website Development</Link>
                                                     </motion.li>
                                                     <motion.li variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}>
-                                                        <Link to="/app-development" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={handleLinkClick}>App Development</Link>
+                                                        <Link to="/app-development" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={() => { handleLinkClick(); scrollToTop(); }}>App Development</Link>
                                                     </motion.li>
                                                     <motion.li variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}>
-                                                        <Link to="/software-development" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={handleLinkClick}>Software Development</Link>
+                                                        <Link to="/software-development" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={() => { handleLinkClick(); scrollToTop(); }}>Software Development</Link>
                                                     </motion.li>
                                                     <motion.li variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}>
-                                                        <Link to="/ecommerce-solution" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={handleLinkClick}>E-Commerce Solutions</Link>
+                                                        <Link to="/ecommerce-solution" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={() => { handleLinkClick(); scrollToTop(); }}>E-Commerce Solutions</Link>
                                                     </motion.li>
                                                 </motion.ul>
                                             </motion.ul>
@@ -166,22 +169,22 @@ const Navbar = () => {
                                                     className="relative"
                                                 >
                                                     <motion.li variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}>
-                                                        <Link to="/seo-solution" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={handleLinkClick}>SEO/SEM Solutions</Link>
+                                                        <Link to="/seo-solution" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={() => { handleLinkClick(); scrollToTop(); }}>SEO/SEM Solutions</Link>
                                                     </motion.li>
                                                     <motion.li variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}>
-                                                        <Link to="/digital-marketing" className="block px-4  py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={handleLinkClick}>Digital Marketing</Link>
+                                                        <Link to="/digital-marketing" className="block px-4  py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={() => { handleLinkClick(); scrollToTop(); }}>Digital Marketing</Link>
                                                     </motion.li>
                                                     <motion.li variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}>
-                                                        <Link to="/digital-business-card" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={handleLinkClick}>Digital Business Card</Link>
+                                                        <Link to="/digital-business-card" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={() => { handleLinkClick(); scrollToTop(); }}>Digital Business Card</Link>
                                                     </motion.li>
                                                     <motion.li variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}>
-                                                        <Link to="/digital-brochure" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={handleLinkClick}>Digital Brochure</Link>
+                                                        <Link to="/digital-brochure" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={() => { handleLinkClick(); scrollToTop(); }}>Digital Brochure</Link>
                                                     </motion.li>
                                                     <motion.li variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}>
-                                                        <Link to="/bulk-sms-solutions" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={handleLinkClick}>Bulk SMS Solutions</Link>
+                                                        <Link to="/bulk-sms-solutions" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={() => { handleLinkClick(); scrollToTop(); }}>Bulk SMS Solutions</Link>
                                                     </motion.li>
                                                     <motion.li variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}>
-                                                        <Link to="/ivr-solutions" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={handleLinkClick}>IVR Solutions</Link>
+                                                        <Link to="/ivr-solutions" className="block px-4 py-2 bg-gray-800 hover:bg-gray-700 hover:text-purple-700" onClick={() => { handleLinkClick(); scrollToTop(); }}>IVR Solutions</Link>
                                                     </motion.li>
                                                 </motion.ul>
                                             </motion.ul>
@@ -191,14 +194,14 @@ const Navbar = () => {
                                     <motion.li
                                         whileHover={{ scale: 1.05 }}
                                     >
-                                        <Link to="/cyber-security" className="hover:text-purple-700  px-4 py-2 rounded-md block text-center lg:text-left" onClick={handleLinkClick}>
+                                        <Link to="/cyber-security" className="hover:text-purple-700  px-4 py-2 rounded-md block text-center lg:text-left" onClick={() => { handleLinkClick(); scrollToTop(); }}>
                                             Cyber Security
                                         </Link>
                                     </motion.li>
                                     <motion.li
                                         whileHover={{ scale: 1.05 }}
                                     >
-                                        <Link to="/contact-us" className="hover:text-purple-700  px-4 py-2 rounded-md block text-center lg:text-left" onClick={handleLinkClick}>
+                                        <Link to="/contact-us" className="hover:text-purple-700  px-4 py-2 rounded-md block text-center lg:text-left" onClick={() => { handleLinkClick(); scrollToTop(); }}>
                                             Contact Us
                                         </Link>
                                     </motion.li>
@@ -257,14 +260,14 @@ const Navbar = () => {
                             <motion.li
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <Link to="/Home" className="text-black  px-4 py-2 block" onClick={handleLinkClick}>Home</Link>
+                                <Link to="/Home" className="text-black  px-4 py-2 block" onClick={() => { handleLinkClick(); scrollToTop(); }}>Home</Link>
                             </motion.li>
 
                             {/* about */}
                             <motion.li
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <Link to="/about" className="text-black  px-4 py-2 block" onClick={handleLinkClick}>About Us</Link>
+                                <Link to="/about" className="text-black  px-4 py-2 block" onClick={() => { handleLinkClick(); scrollToTop(); }}>About Us</Link>
                             </motion.li>
 
                             {/* software solutions */}
@@ -285,10 +288,10 @@ const Navbar = () => {
                                         transition={{ duration: 0.3 }}
                                         className="bg-gray-200 text-black"
                                     >
-                                        <li><Link to="/website-development" className="block px-4 py-2 hover:bg-blue-600" onClick={handleLinkClick}>Website Development</Link></li>
-                                        <li><Link to="/app-development" className="block px-4 py-2 hover:bg-blue-600" onClick={handleLinkClick}>App Development</Link></li>
-                                        <li><Link to="/software-development" className="block px-4 py-2 hover:bg-blue-600" onClick={handleLinkClick}>Software Development</Link></li>
-                                        <li><Link to="/ecommerce-solution" className="block px-4 py-2 hover:bg-blue-600" onClick={handleLinkClick}>E-Commerce Solutions</Link></li>
+                                        <li><Link to="/website-development" className="block px-4 py-2 hover:bg-blue-600" onClick={() => { handleLinkClick(); scrollToTop(); }}>Website Development</Link></li>
+                                        <li><Link to="/app-development" className="block px-4 py-2 hover:bg-blue-600" onClick={() => { handleLinkClick(); scrollToTop(); }}>App Development</Link></li>
+                                        <li><Link to="/software-development" className="block px-4 py-2 hover:bg-blue-600" onClick={() => { handleLinkClick(); scrollToTop(); }}>Software Development</Link></li>
+                                        <li><Link to="/ecommerce-solution" className="block px-4 py-2 hover:bg-blue-600" onClick={() => { handleLinkClick(); scrollToTop(); }}>E-Commerce Solutions</Link></li>
                                     </motion.ul>
                                 )}
                             </motion.li>
@@ -309,13 +312,13 @@ const Navbar = () => {
                                         transition={{ duration: 0.3 }}
                                         className="bg-gray-200 text-black"
                                     >
-                                        <li><Link to="/seo-solution" className="block px-4 py-2 hover:bg-blue-600" onClick={handleLinkClick}>SEO/SEM Solutions</Link></li>
-                                        <li><Link to="/digital-marketing" className="block px-4 py-2 hover:bg-blue-600" onClick={handleLinkClick}>Digital Marketing</Link></li>
-                                        <li><Link to="/digital-business-card" className="block px-4 py-2 hover:bg-blue-600" onClick={handleLinkClick}>Digital Business Card</Link></li>
-                                        <li><Link to="/digital-brochure" className="block px-4 py-2 hover:bg-blue-600" onClick={handleLinkClick}>Digital Brochure</Link></li>
+                                        <li><Link to="/seo-solution" className="block px-4 py-2 hover:bg-blue-600" onClick={() => { handleLinkClick(); scrollToTop(); }}>SEO/SEM Solutions</Link></li>
+                                        <li><Link to="/digital-marketing" className="block px-4 py-2 hover:bg-blue-600" onClick={() => { handleLinkClick(); scrollToTop(); }}>Digital Marketing</Link></li>
+                                        <li><Link to="/digital-business-card" className="block px-4 py-2 hover:bg-blue-600" onClick={() => { handleLinkClick(); scrollToTop(); }}>Digital Business Card</Link></li>
+                                        <li><Link to="/digital-brochure" className="block px-4 py-2 hover:bg-blue-600" onClick={() => { handleLinkClick(); scrollToTop(); }}>Digital Brochure</Link></li>
 
-                                        <li><Link to="/bulk-sms-solutions" className="block px-4 py-2 hover:bg-blue-600" onClick={handleLinkClick}>Bulk SMS Solutions</Link></li>
-                                        <li><Link to="/ivr-solutions" className="block px-4 py-2 hover:bg-blue-600" onClick={handleLinkClick}>IVR Solutions</Link></li>
+                                        <li><Link to="/bulk-sms-solutions" className="block px-4 py-2 hover:bg-blue-600" onClick={() => { handleLinkClick(); scrollToTop(); }}>Bulk SMS Solutions</Link></li>
+                                        <li><Link to="/ivr-solutions" className="block px-4 py-2 hover:bg-blue-600" onClick={() => { handleLinkClick(); scrollToTop(); }}>IVR Solutions</Link></li>
 
                                     </motion.ul>
                                 )}
@@ -324,17 +327,17 @@ const Navbar = () => {
                                 whileHover={{ scale: 1.05 }}
                             >
 
-                                <Link to="/cyber-security" className="text-black  px-4 py-2 block" onClick={handleLinkClick}>Cyber Security</Link>
+                                <Link to="/cyber-security" className="text-black  px-4 py-2 block" onClick={() => { handleLinkClick(); scrollToTop(); }}>Cyber Security</Link>
                             </motion.li>
                             <motion.li
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <Link to="/contact-us" className="text-black  px-4 py-2 block" onClick={handleLinkClick}>Contact Us</Link>
+                                <Link to="/contact-us" className="text-black  px-4 py-2 block" onClick={() => { handleLinkClick(); scrollToTop(); }}>Contact Us</Link>
                             </motion.li>
                             <motion.li
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <Link to="/demo" className="text-black  px-4 py-2 block" onClick={handleLinkClick}>Demo</Link>
+                                <Link to="/demo" className="text-black  px-4 py-2 block" onClick={() => { handleLinkClick(); scrollToTop(); }}>Demo</Link>
                             </motion.li>
 
                         </ul>

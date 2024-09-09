@@ -232,7 +232,8 @@ const ProcessSection = () => {
         </div>
         <div className="flex flex-wrap -mx-2">
           {/* DESIGN */}
-          <a href="#" className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8">
+          {/* <a href="#" className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8"> */}
+          <a className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8">
             <motion.div
               className="flip-box"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -262,7 +263,8 @@ const ProcessSection = () => {
           </a>
 
           {/* DEVELOPMENT */}
-          <a href="#" className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8">
+          {/* <a href="#" className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8"> */}
+          <a  className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8">
             <motion.div
               className="flip-box"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -292,7 +294,8 @@ const ProcessSection = () => {
           </a>
 
           {/* DELIVERY/LAUNCH */}
-          <a href="#" className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8">
+          {/* <a href="#" className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8"> */}
+          <a  className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8">
             <motion.div
               className="flip-box"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -322,7 +325,8 @@ const ProcessSection = () => {
           </a>
 
           {/* SUPPORT */}
-          <a href="#" className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8">
+          {/* <a href="#" className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8"> */}
+          <a  className="w-full md:w-1/2 lg:w-1/4 px-2 mb-8">
             <motion.div
               className="flip-box"
               initial={{ opacity: 0, scale: 0.9 }}

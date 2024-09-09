@@ -20,13 +20,13 @@
 //                     <h1 className="text-3xl md:text-4xl font-semibold mb-4 text-[#2D3748] leading-[1.3] antialiased transition-colors duration-500 hover:text-[#4A5568]">
 //                         Best SEO Services for Optimal Results
 //                     </h1>
-//                     <p className="text-lg mb-4 leading-[1.7] font-normal text-[#4C4C4D] antialiased transition-opacity duration-500 hover:opacity-80">
+//                     <p className="text-lg mb-4 leading-[1.7] font-normal text-whiteantialiased transition-opacity duration-500 hover:opacity-80">
 //                         Using search engines as a channel for increasing happy customers, our aim is to give your website a good position in popular search engine results page lists.
 //                     </p>
-//                     <p className="text-lg mb-4 leading-[1.7] font-normal text-[#4C4C4D] antialiased transition-opacity duration-500 hover:opacity-80">
+//                     <p className="text-lg mb-4 leading-[1.7] font-normal text-whiteantialiased transition-opacity duration-500 hover:opacity-80">
 //                         Search Engines are the most effective way to get your website noticed by potential customers. Arrc Technology provides the best organic SEO services in Pune at affordable prices. We are Fastest Growing and Most Awarded Full-Service SEO Company.
 //                     </p>
-//                     <p className="text-lg mb-4 leading-[1.7] font-normal text-[#4C4C4D] antialiased transition-opacity duration-500 hover:opacity-80">
+//                     <p className="text-lg mb-4 leading-[1.7] font-normal text-whiteantialiased transition-opacity duration-500 hover:opacity-80">
 //                         We offer guaranteed SEO services. Complete Website Analysis. We, with an in-depth review of your site, find out weaknesses & strengths and discover why the site is not fulfilling peak efficiency. We deliver results for companies around the world so if you want Profit by Search Pune’s no 1 SEO Firm to help with your big plans then we would love to chat about Pune’s Premium SEO Services Offering.
 //                     </p>
 //                 </div>
@@ -38,10 +38,10 @@
 //                     <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#2D3748] leading-[1.4] antialiased transition-colors duration-500 hover:text-[#4A5568]">
 //                         Why Companies Should Invest in SEO
 //                     </h2>
-//                     <p className="text-lg mb-4 leading-[1.7] text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80">
+//                     <p className="text-lg mb-4 leading-[1.7] text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80">
 //                         Companies that seek to expand their online presence to the growing population of customers should invest in SEO. It is an effective way to engage with customers and grow business revenue, SEO strategies are crucial in helping boost their brand.
 //                     </p>
-//                     <ul className="list-disc list-inside pl-6 mb-4 text-[#4C4C4D] leading-[1.7] font-normal antialiased">
+//                     <ul className="list-disc list-inside pl-6 mb-4 text-whiteleading-[1.7] font-normal antialiased">
 //                         <li className="mb-2">Higher Brand Credibility</li>
 //                         <li className="mb-2">Take Business To The Next Level</li>
 //                         <li className="mb-2">Definite Increase in Quality Traffic</li>
@@ -66,19 +66,19 @@
 //                 <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#2D3748] leading-[1.4] antialiased transition-colors duration-500 hover:text-[#4A5568]">
 //                     Search Engine Marketing (SEM)
 //                 </h2>
-//                 <p className="text-lg mb-4 leading-[1.7] text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80">
+//                 <p className="text-lg mb-4 leading-[1.7] text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80">
 //                     Search Engine has become an integral part of every internet user’s life, an online support system guiding most of their search activities. This has made availing search engine marketing services a necessary step in the road to increasing online visibility and overall ‘search-ability’ in search engine results page.
 //                 </p>
-//                 <p className="text-lg mb-4 leading-[1.7] text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80">
+//                 <p className="text-lg mb-4 leading-[1.7] text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80">
 //                     Search engine marketing (SEM) is a form of Internet marketing that involves the promotion of websites by increasing their visibility in search engine results pages (SERPs) primarily through paid advertising.
 //                 </p>
-//                 <p className="text-lg mb-4 leading-[1.7] text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80">
+//                 <p className="text-lg mb-4 leading-[1.7] text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80">
 //                     SEM uses paid advertising with AdWords or Bing Ads, pay per click (particularly beneficial for local providers as it enables potential consumers to contact a company directly with one click).
 //                 </p>
-//                 <p className="text-lg mb-4 leading-[1.7] text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80">
+//                 <p className="text-lg mb-4 leading-[1.7] text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80">
 //                     A keyword analysis is performed for both SEO and SEM, but not necessarily at the same time. SEM and SEO both need to be monitored and updated frequently to reflect evolving best practices.
 //                 </p>
-//                 <p className="text-lg mb-4 leading-[1.7] text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80">
+//                 <p className="text-lg mb-4 leading-[1.7] text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80">
 //                     Arrc Technology is a fastest growing Search Engine Marketing Agency in Pune which mainly focuses on providing the best quality SEM services to the clients. Our mission at Arrc Technology is to bloom as an eminent SEM agency in Pune, in this vastly spreading era of digital marketing by delivering the best quality Search Engine Marketing Services to our clients and maintain our reputation by making a balance between guaranteed results and client satisfaction.
 //                 </p>
 //             </div>
@@ -132,7 +132,7 @@ const SEOPage = () => {
                         initial={{ opacity: 0, y: 20 }} 
                         animate={{ opacity: 1, y: 0 }} 
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed font-normal text-[#4C4C4D] antialiased transition-opacity duration-500 hover:opacity-80"
+                        className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed font-normal text-white antialiased transition-opacity duration-500 hover:opacity-80"
                     >
                         Using search engines as a channel for increasing happy customers, our aim is to give your website a good position in popular search engine results page lists.
                     </motion.p>
@@ -140,7 +140,7 @@ const SEOPage = () => {
                         initial={{ opacity: 0, y: 20 }} 
                         animate={{ opacity: 1, y: 0 }} 
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed font-normal text-[#4C4C4D] antialiased transition-opacity duration-500 hover:opacity-80"
+                        className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed font-normal text-whiteantialiased transition-opacity duration-500 hover:opacity-80"
                     >
                         Search Engines are the most effective way to get your website noticed by potential customers. Arrc Technology provides the best organic SEO services in Pune at affordable prices. We are Fastest Growing and Most Awarded Full-Service SEO Company.
                     </motion.p>
@@ -148,7 +148,7 @@ const SEOPage = () => {
                         initial={{ opacity: 0, y: 20 }} 
                         animate={{ opacity: 1, y: 0 }} 
                         transition={{ duration: 0.6, delay: 0.6 }}
-                        className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed font-normal text-[#4C4C4D] antialiased transition-opacity duration-500 hover:opacity-80"
+                        className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed font-normal text-whiteantialiased transition-opacity duration-500 hover:opacity-80"
                     >
                         We offer guaranteed SEO services. Complete Website Analysis. We, with an in-depth review of your site, find out weaknesses & strengths and discover why the site is not fulfilling peak efficiency. We deliver results for companies around the world so if you want Profit by Search Pune’s no 1 SEO Firm to help with your big plans then we would love to chat about Pune’s Premium SEO Services Offering.
                     </motion.p>
@@ -170,7 +170,7 @@ const SEOPage = () => {
                         initial={{ opacity: 0, y: 20 }} 
                         animate={{ opacity: 1, y: 0 }} 
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80"
+                        className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80"
                     >
                         Companies that seek to expand their online presence to the growing population of customers should invest in SEO. It is an effective way to engage with customers and grow business revenue, SEO strategies are crucial in helping boost their brand.
                     </motion.p>
@@ -178,7 +178,7 @@ const SEOPage = () => {
                         initial={{ opacity: 0, y: 20 }} 
                         animate={{ opacity: 1, y: 0 }} 
                         transition={{ duration: 0.6, delay: 0.6 }}
-                        className="list-disc list-inside pl-6 mb-4 text-[#4C4C4D] leading-relaxed font-normal antialiased"
+                        className="list-disc list-inside pl-6 mb-4 text-whiteleading-relaxed font-normal antialiased"
                     >
                         <li className="mb-2">Higher Brand Credibility</li>
                         <li className="mb-2">Take Business To The Next Level</li>
@@ -218,7 +218,7 @@ const SEOPage = () => {
                     initial={{ opacity: 0, y: 20 }} 
                     animate={{ opacity: 1, y: 0 }} 
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80"
+                    className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80"
                 >
                     Search Engine has become an integral part of every internet user’s life, an online support system guiding most of their search activities. This has made availing search engine marketing services a necessary step in the road to increasing online visibility and overall ‘search-ability’ in search engine results page.
                 </motion.p>
@@ -226,7 +226,7 @@ const SEOPage = () => {
                     initial={{ opacity: 0, y: 20 }} 
                     animate={{ opacity: 1, y: 0 }} 
                     transition={{ duration: 0.6, delay: 0.6 }}
-                    className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80"
+                    className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80"
                 >
                     Search engine marketing (SEM) is a form of Internet marketing that involves the promotion of websites by increasing their visibility in search engine results pages (SERPs) primarily through paid advertising.
                 </motion.p>
@@ -234,7 +234,7 @@ const SEOPage = () => {
                     initial={{ opacity: 0, y: 20 }} 
                     animate={{ opacity: 1, y: 0 }} 
                     transition={{ duration: 0.6, delay: 0.8 }}
-                    className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80"
+                    className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80"
                 >
                     SEM uses paid advertising with AdWords or Bing Ads, pay per click (particularly beneficial for local providers as it enables potential consumers to contact a company directly with one click).
                 </motion.p>
@@ -242,7 +242,7 @@ const SEOPage = () => {
                     initial={{ opacity: 0, y: 20 }} 
                     animate={{ opacity: 1, y: 0 }} 
                     transition={{ duration: 0.6, delay: 1.0 }}
-                    className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80"
+                    className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80"
                 >
                     A keyword analysis is performed for both SEO and SEM, but not necessarily at the same time. SEM and SEO both need to be monitored and updated frequently to reflect evolving best practices.
                 </motion.p>
@@ -250,7 +250,7 @@ const SEOPage = () => {
                     initial={{ opacity: 0, y: 20 }} 
                     animate={{ opacity: 1, y: 0 }} 
                     transition={{ duration: 0.6, delay: 1.2 }}
-                    className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-[#4C4C4D] font-normal antialiased transition-opacity duration-500 hover:opacity-80"
+                    className="text-base md:text-lg lg:text-xl mb-4 leading-relaxed text-whitefont-normal antialiased transition-opacity duration-500 hover:opacity-80"
                 >
                     Arrc Technology is a fastest growing Search Engine Marketing Agency in Pune which mainly focuses on providing the best quality SEM services to the clients. Our mission at Arrc Technology is to bloom as an eminent SEM agency in Pune, in this vastly spreading era of digital marketing by delivering the best quality Search Engine Marketing Services to our clients and maintain our reputation by making a balance between guaranteed results and client satisfaction.
                 </motion.p>

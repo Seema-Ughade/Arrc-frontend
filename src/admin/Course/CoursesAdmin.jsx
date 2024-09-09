@@ -73,10 +73,12 @@
 
 
 
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
+import { DeleteOutlined, EditOutlined, FileExcelOutlined } from '@ant-design/icons';
+import { Pagination, Button } from 'antd'; // Import Ant Design Pagination and Button components
+import * as XLSX from 'xlsx';
+import { saveAs } from 'file-saver';
 
 const CourseAdmin = () => {
   const [applications, setApplications] = useState([]);
@@ -92,6 +94,8 @@ const CourseAdmin = () => {
     mode: '',
     date: ''
   });
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(10);
 
   useEffect(() => {
     const fetchApplications = async () => {
@@ -152,6 +156,24 @@ const CourseAdmin = () => {
     }
   };
 
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const handleExport = () => {
+    const ws = XLSX.utils.json_to_sheet(applications);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Applications');
+    const wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+    const blob = new Blob([wbout], { type: 'application/octet-stream' });
+    saveAs(blob, 'Course_Applications.xlsx');
+  };
+
+  // Pagination logic
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = applications.slice(indexOfFirstItem, indexOfLastItem);
+
   if (loading) {
     return <div className="container mx-auto p-6">Loading...</div>;
   }
@@ -162,7 +184,16 @@ const CourseAdmin = () => {
 
   return (
     <div className="container mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-4">Course Applications</h1>
+      <div className="flex justify-between mb-4">
+        <h1 className="text-2xl font-bold">Course Applications</h1>
+        <Button
+          type="primary"
+          icon={<FileExcelOutlined />}
+          onClick={handleExport}
+        >
+          Export to Excel
+        </Button>
+      </div>
       {editingApplication && (
         <div className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Edit Application</h2>
@@ -252,8 +283,8 @@ const CourseAdmin = () => {
           </tr>
         </thead>
         <tbody>
-          {applications.length > 0 ? (
-            applications.map((app, index) => (
+          {currentItems.length > 0 ? (
+            currentItems.map((app, index) => (
               <tr key={index}>
                 <td className="py-2 px-4 border-b">{app.name}</td>
                 <td className="py-2 px-4 border-b">{app.email}</td>
@@ -263,7 +294,7 @@ const CourseAdmin = () => {
                 <td className="py-2 px-4 border-b">{app.mode}</td>
                 <td className="py-2 px-4 border-b">{new Date(app.date).toLocaleDateString()}</td>
                 <td className="py-2 px-4 border-b flex space-x-2">
-                <button
+                  <button
                     className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 flex items-center"
                     onClick={() => handleEdit(app)}
                   >
@@ -275,7 +306,6 @@ const CourseAdmin = () => {
                   >
                     <DeleteOutlined />
                   </button>
-                  
                 </td>
               </tr>
             ))
@@ -286,6 +316,14 @@ const CourseAdmin = () => {
           )}
         </tbody>
       </table>
+      <div className="flex justify-end mt-4">
+        <Pagination
+          current={currentPage}
+          total={applications.length}
+          pageSize={itemsPerPage}
+          onChange={handlePageChange}
+        />
+      </div>
     </div>
   );
 };

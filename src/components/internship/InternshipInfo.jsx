@@ -41,15 +41,12 @@ const InternshipInfo = () => {
       formData.append('mode', values.mode.toUpperCase());
       formData.append('education', values.education.toUpperCase());
 
-      
-
       await axios.post('https://arrc-backend.onrender.com/api/v1/internships/internshipApplications', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
-    });
-    
+      });
 
       toast.success('Application submitted successfully!');
-      resetForm();
+      resetForm(); // Reset form fields after successful submission
     } catch (error) {
       toast.error('Failed to submit application. Please try again.');
       console.error('Error submitting application:', error);
@@ -66,9 +63,9 @@ const InternshipInfo = () => {
           Back
         </button>
 
-        <div className="grid  grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Side: Internship Details */}
-          <div className=" p-8 bg-gray-900 rounded-lg shadow-lg">
+          <div className="p-8 bg-gray-900 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
             <p className="text-white mb-4">{overview}</p>
             <ul className="list-disc pl-5 space-y-2">
@@ -79,7 +76,7 @@ const InternshipInfo = () => {
           </div>
 
           {/* Right Side: Application Form */}
-          <div className="  bg-gray-900 p-8 rounded-lg shadow-lg">
+          <div className="bg-gray-900 p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-purple-600 mb-6">Apply for {title}</h2>
             <Formik
               initialValues={{ name: '', city: '', mobile: '', email: '', techSkills: '', mode: '', education: '', cv: null }}
@@ -119,7 +116,7 @@ const InternshipInfo = () => {
                       <ErrorMessage name="mobile" component="div" className="text-red-500 text-sm mt-1" />
                     </div>
                     
-                    <div className="mb-4">text-white
+                    <div className="mb-4">
                       <label className="block text-white font-medium mb-2">Email</label>
                       <Field
                         type="email"
