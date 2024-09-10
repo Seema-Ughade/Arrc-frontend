@@ -31,7 +31,7 @@ const IVRContent = () => {
 
       {/* Main Content */}
       <motion.div
-        className="text-center"
+        className=""
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
