@@ -11,57 +11,13 @@
 
 
 
-
-
-/* 
-
-
-
-
-
-
-.carousel-item {
-    position: relative;
-  }
-  
-  .carousel-item img {
-    object-fit: cover;
-  }
-  
-  .carousel-caption h2 {
-    font-size: 1.5rem;
-  }
-  
-  .position-absolute {
-    position: absolute;
-  }
-  
-  .end-0 {
-    right: 0;
-  }
-  
-  .top-0 {
-    top: 0;
-  }
-  
-  .h-auto {
-    height: auto;
-  }
-  
-  .h-50 {
-    height: 50%;
-  }
-  
-  .w-auto {
-    width: auto;
-  }
-  
-  .hero-robot {
-    width: 300px;
-    height: auto; 
-    max-height: 60%; 
-    right: 0;
-    top: 50%; 
-    transform: translateY(-50%);
-  }
-   */
+.carousel-caption {
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5); /* Optional: add a background for text readability */
+  padding: 20px;
+  border-radius: 8px;
+}

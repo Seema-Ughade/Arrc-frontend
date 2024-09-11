@@ -348,7 +348,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="text-base mb-4">
-              <p>+91-7502211337 / +91-9107223377</p>
+              <p>+91-9146677505</p>
               <p>Email: <a href="mailto:info@example.com" className="text-blue-400 hover:underline">arrctechnology15@gmail.com</a></p>
             </div>
             <div className="text-sm mb-4">
