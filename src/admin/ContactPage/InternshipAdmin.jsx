@@ -862,7 +862,7 @@ const InternshipAdmin = () => {
   const deleteSelectedApplications = async () => {
     try {
       if (selectedApplications.length > 0) {
-        await Promise.all(selectedApplications.map(id => axios.delete(`/api/v1/internships/internshipApplications/${id}`)));
+        await Promise.all(selectedApplications.map(id => axios.delete(`http://127.0.0.1:5000/api/v1/internships/internshipApplications/${id}`)));
         setApplications(applications.filter(app => !selectedApplications.includes(app._id)));
         setSelectedApplications([]);
         setSelectAll(false);
