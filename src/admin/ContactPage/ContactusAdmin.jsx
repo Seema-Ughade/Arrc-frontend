@@ -231,6 +231,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import * as XLSX from 'xlsx';
+import { DownloadOutlined, DeleteOutlined, FileExcelOutlined, EditOutlined } from '@ant-design/icons';
+
 
 const ContactUsAdmin = () => {
     const [contacts, setContacts] = useState([]);
@@ -316,12 +318,29 @@ const ContactUsAdmin = () => {
                 <h2 className="text-2xl font-bold">Contact Us Entries</h2>
                 <div className="space-x-2">
                     <button
+
                         className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+                        icon={<DeleteOutlined />}
+
                         onClick={handleDeleteSelected}
                         disabled={selectedContacts.length === 0}
                     >
                         Delete Selected
                     </button>
+
+
+                  
+
+
+
+
+
+
+
+
+
+
+
                     <button
                         className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
                         onClick={handleDeleteAll}
@@ -329,6 +348,8 @@ const ContactUsAdmin = () => {
                         Delete All
                     </button>
                     <button
+                                icon={<FileExcelOutlined />}
+
                         className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
                         onClick={handleExportToExcel}
                     >

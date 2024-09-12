@@ -458,8 +458,12 @@ const Navbar = () => {
 
 
                         {/* Mobile Menu Button */}
+                       
+
+                        {/* Navbar Links */}
+                        <div className=" p-2   rounded-lg text-white">
                         <button
-                            className="block sm:ml-28 md:ml-96  lg:hidden px-6 py-2 rounded-md text-white focus:outline-none"
+                            className="block sm:ml-28 md:ml-96  lg:hidden pl-14 py-2 rounded-md text-white focus:outline-none"
                             onClick={toggleMenu}
                         >
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -467,11 +471,10 @@ const Navbar = () => {
                             </svg>
                         </button>
 
-                        {/* Navbar Links */}
-                        <div className=" p-2   rounded-lg text-white">
-
                             <nav className={`lg:flex lg:items-center lg:space-x-6 ${isOpen ? 'block' : 'hidden'} lg:block`}>
+                                
                                 <ul className="flex flex-col lg:flex-row lg:space-x-1">
+
                                     <motion.li
                                         whileHover={{ scale: 1.05 }}
                                     >

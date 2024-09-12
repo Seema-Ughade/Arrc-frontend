@@ -223,7 +223,7 @@ const services = [
 const ServiceSection = () => {
   return (
     <section id="services" className="py-12">
-      <div className="container mx-auto px-6 md:px-12 lg:px-40 text-center">
+      <div className="container mx-auto px-6  md:px-12 lg:px-40 text-center">
         <motion.h2
           className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-gradient bg-clip-text text-purple-600"
           whileHover={{ scale: 1.05, textShadow: "0 0 15px rgba(173, 216, 230, 0.8)" }} // Light Blue glow on hover
@@ -238,19 +238,19 @@ const ServiceSection = () => {
           Discover our diverse range of services tailored to help you transform your business with innovative IT solutions.
         </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
               className="relative transform transition-transform duration-500"
               whileHover={cardHoverVariants} // Hover animations for card
             >
-              <div className="bg-gray-800 shadow-2xl rounded-lg p-4 sm:p-6 flex flex-col items-center">
+              <div className="bg-gray-800 h-[500px] border-box shadow-2xl rounded-lg p-4 sm:p-6 flex flex-col items-center">
                 <div className="relative w-full h-32 sm:h-40 lg:h-48">
                   <motion.img
                     src={service.img}
                     alt={service.title}
-                    className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
+                    className="absolute inset-0 w-full  h-full object-cover rounded-t-lg"
                     whileHover={{ scale: 1.05 }} // Hover animation for image
                   />
                 </div>
