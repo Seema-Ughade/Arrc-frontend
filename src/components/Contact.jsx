@@ -6,6 +6,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import loading from '../assets/loading.gif';
 import logo1 from '../assets/logo1.jpeg';
+import Demo from '../components/pages/demo/Demo';
+
 
 const Contact = () => {
     const initialValues = {
@@ -42,6 +44,7 @@ const Contact = () => {
     };
 
     return (
+        <>
         <div>
             <ToastContainer />
 
@@ -153,7 +156,7 @@ const Contact = () => {
                             <div className="inner-box p-4">
                                 <span className="name text-lg text-purple-600 font-semibold">Call Us</span>
                                 <span className="info block mt-2 text-white">
-                                    <a href="tel:+917502211337">+91-7502211337 / +91-9107223377</a>
+                                    <a href="tel:+917502211337">+91-7502211337 / +91-9146677505</a>
                                 </span>
                             </div>
                         </div>
@@ -180,7 +183,11 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+            
         </div>
+        <Demo />
+
+        </>
     );
 };
 

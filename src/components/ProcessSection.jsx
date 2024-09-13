@@ -214,7 +214,7 @@ const ProcessSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <motion.h3
-            className="text-3xl font-bold mb-4 text-white"
+            className="text-3xl font-bold mb-4 text-purple-600 hover:text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -308,7 +308,7 @@ const ProcessSection = () => {
                     <FaCheckSquare />
                   </div>
                   <div className="text-center">
-                    <h3 className="text-xl font-semibold mb-2 text-white">DELIVERY/LAUNCH</h3>
+                    <h3 className="text-xl font-semibold mb-2  text-white">DELIVERY/LAUNCH</h3>
                     <p className="text-gray-200">
                       The final stage is taking the work live and ensuring that your website is error-free or your mobile app meets the app store guidelines.
                     </p>

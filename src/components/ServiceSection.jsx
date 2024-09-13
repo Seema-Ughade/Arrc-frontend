@@ -245,8 +245,8 @@ const ServiceSection = () => {
               className="relative transform transition-transform duration-500"
               whileHover={cardHoverVariants} // Hover animations for card
             >
-              <div className="bg-gray-800 h-[500px] border-box shadow-2xl rounded-lg p-4 sm:p-6 flex flex-col items-center">
-                <div className="relative w-full h-32 sm:h-40 lg:h-48">
+              <div className="bg-gray-800 border-box shadow-2xl rounded-lg p-4 sm:p-6 flex flex-col items-center">
+                <div className="relative w-full border-box h-32 sm:h-40 lg:h-48">
                   <motion.img
                     src={service.img}
                     alt={service.title}

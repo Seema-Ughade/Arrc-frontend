@@ -135,6 +135,7 @@ import IVRContent from './components/pages/ServicesPages/IVRContent'
 import CourseSection from './admin/Course/CourseSection'
 import CourseForm from './admin/Course/CourseForm'
 import SoftDev from './components/pages/ServicesPages/Softdev.jsx'
+import CourseLeadPage from './components/pages/ServicesPages/CourseLeadPage.jsx'
 
 
 
@@ -181,6 +182,7 @@ const App = () => {
         <Route path="/internshipInfo" element={<><Navbar /><InternshipInfo /><Chatbot/><CatelogDownload/><Footer /></>} />
         <Route path="/courseInfo" element={<><Navbar /><CourseForm /><Chatbot/><CatelogDownload/><Footer /></>} />
         <Route path="/CourseSection" element={<><Navbar /><CourseSection /><Chatbot/><CatelogDownload/><Footer /></>} />
+        <Route path="/CourseLeadPage" element={<><Navbar /><CourseLeadPage /><Chatbot/><CatelogDownload/><Footer /></>} />
 
         {/* Login Route */}
         <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />

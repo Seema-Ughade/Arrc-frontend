@@ -96,7 +96,7 @@
 //               </a>
 //             </div>
 //             <div className="text-base mb-4">
-//               <p>+91-7502211337 / +91-9107223377</p>
+//               <p>+91-7502211337 / +91-9146677505</p>
 //               <p>Email: <a href="mailto:info@example.com" className="text-blue-400 hover:underline">arrctechnology15@gmail.com</a></p>
 //             </div>
 //             <div className=" text-sm mb-4">
@@ -216,7 +216,7 @@
 //               </a>
 //             </div>
 //             <div className="text-base mb-4">
-//               <p>+91-7502211337 / +91-9107223377</p>
+//               <p>+91-7502211337 / +91-9146677505</p>
 //               <p>Email: <a href="mailto:info@example.com" className="text-blue-400 hover:underline">arrctechnology15@gmail.com</a></p>
 //             </div>
 //             <div className="text-sm mb-4">
@@ -289,7 +289,7 @@ const Footer = () => {
             >
               Read More...
             </Link><br/>
-            <button 
+            {/* <button 
               className="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-blue-400 transition duration-300"
               onClick={() => {
                 scrollToTop();
@@ -297,7 +297,7 @@ const Footer = () => {
               }}
             >
               Login
-            </button>
+            </button> */}
           </motion.section>
 
           {/* Our Services Section */}
@@ -323,6 +323,7 @@ const Footer = () => {
               <li><Link to="/internships" className="text-blue-400 hover:underline" onClick={scrollToTop}>Internship</Link></li>
               <li><Link to="/InternshipCourse" className="text-blue-400 hover:underline" onClick={scrollToTop}>Internship Information</Link></li>
               <li><Link to="/CourseSection" className="text-blue-400 hover:underline" onClick={scrollToTop}>Course Information</Link></li>
+              <li><Link to="/CourseLeadPage" className="text-blue-400 hover:underline" onClick={scrollToTop}>CourseLeadPage</Link></li>
             </ul>
           </motion.section>
 
@@ -348,7 +349,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="text-base mb-4">
-              <p>+91-9146677505</p>
+              <p>+91-7502211337 / +91-9146677505</p>
               <p>Email: <a href="mailto:info@example.com" className="text-blue-400 hover:underline">arrctechnology15@gmail.com</a></p>
             </div>
             <div className="text-sm mb-4">

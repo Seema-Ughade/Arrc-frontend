@@ -42,7 +42,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-4">
                         <div className="flex items-center  space-x-2">
                             <a href="tel:7502211337" className="text-white hover:text-gray-300 ">
-                                <i className="fa fa-phone"></i> +91-7502211337 / +91-9107223377
+                                <i className="fa fa-phone"></i> +91-7502211337 / +91-9146677505
                             </a>
                             <span className="text-gray-400">|</span>
                             <span className="text-gray-400 text-sm">Call us for any question or concern</span>

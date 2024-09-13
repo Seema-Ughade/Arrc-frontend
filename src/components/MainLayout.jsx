@@ -231,9 +231,9 @@ import { gsap } from 'gsap';
 import ScrollToPlugin from 'gsap/dist/ScrollToPlugin';
 import ProcessSection from './ProcessSection';
 import ServiceSection from './ServiceSection';
-import ProcessTimeline from './ProcessTimeline';
+// import ProcessTimeline from './ProcessTimeline';
 import About from './About';
-import Demo from '../components/pages/demo/Demo';
+// import Demo from '../components/pages/demo/Demo';
 import HomeSection from './HomeSection';
 import HeroPage from '../components/pages/Heropage/HeroPage';
 
@@ -242,11 +242,11 @@ gsap.registerPlugin(ScrollToPlugin);
 const MainLayout = () => {
   // Setup refs with useInView
   const { ref: serviceRef } = useInView({ triggerOnce: false, threshold: 0.1 });
-  const { ref: processTimelineRef } = useInView({ triggerOnce: false, threshold: 0.1 });
+  // const { ref: processTimelineRef } = useInView({ triggerOnce: false, threshold: 0.1 });
   const { ref: aboutRef } = useInView({ triggerOnce: false, threshold: 0.1 });
   const { ref: homeSectionRef } = useInView({ triggerOnce: false, threshold: 0.1 });
   const { ref: processSectionRef } = useInView({ triggerOnce: false, threshold: 0.1 });
-  const { ref: demoRef } = useInView({ triggerOnce: false, threshold: 0.1 });
+  // const { ref: demoRef } = useInView({ triggerOnce: false, threshold: 0.1 });
 
   useEffect(() => {
     gsap.fromTo(
@@ -267,10 +267,10 @@ const MainLayout = () => {
       <div ref={serviceRef} id="service">
         <ServiceSection />
       </div>
-
+{/* 
       <div ref={processTimelineRef} id="processTimeline">
         <ProcessTimeline />
-      </div>
+      </div> */}
 
       <div ref={aboutRef} id="about">
         <About />
@@ -284,17 +284,17 @@ const MainLayout = () => {
         <ProcessSection />
       </div>
 
-      <div ref={demoRef} id="demo">
+      {/* <div ref={demoRef} id="demo">
         <Demo />
-      </div>
+      </div> */}
 
       {/* Example of buttons to scroll to different sections */}
-      <button onClick={() => scrollToSection('service')}>Go to Service</button>
+      {/* <button onClick={() => scrollToSection('service')}>Go to Service</button>
       <button onClick={() => scrollToSection('processTimeline')}>Go to Process Timeline</button>
       <button onClick={() => scrollToSection('about')}>Go to About</button>
       <button onClick={() => scrollToSection('homeSection')}>Go to Home Section</button>
-      <button onClick={() => scrollToSection('processSection')}>Go to Process Section</button>
-      <button onClick={() => scrollToSection('demo')}>Go to Demo</button>
+      <button onClick={() => scrollToSection('processSection')}>Go to Process Section</button> */}
+      {/* <button onClick={() => scrollToSection('demo')}>Go to Demo</button> */}
     </div>
   );
 };
