@@ -244,7 +244,7 @@ const MainLayout = () => {
   const { ref: serviceRef } = useInView({ triggerOnce: false, threshold: 0.1 });
   // const { ref: processTimelineRef } = useInView({ triggerOnce: false, threshold: 0.1 });
   const { ref: aboutRef } = useInView({ triggerOnce: false, threshold: 0.1 });
-  const { ref: homeSectionRef } = useInView({ triggerOnce: false, threshold: 0.1 });
+  // const { ref: homeSectionRef } = useInView({ triggerOnce: false, threshold: 0.1 });
   const { ref: processSectionRef } = useInView({ triggerOnce: false, threshold: 0.1 });
   // const { ref: demoRef } = useInView({ triggerOnce: false, threshold: 0.1 });
 
@@ -276,9 +276,9 @@ const MainLayout = () => {
         <About />
       </div>
 
-      <div ref={homeSectionRef} id="homeSection">
+      {/* <div ref={homeSectionRef} id="homeSection">
         <HomeSection />
-      </div>
+      </div> */}
 
       <div ref={processSectionRef} id="processSection">
         <ProcessSection />

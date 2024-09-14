@@ -47,11 +47,12 @@ const CourseForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
           {/* Left Side: Course Details */}
           {/* Left Side: Course Details */}
-          <div className="p-8 rounded-lg bg-gray-900  shadow-lg">
-            <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
-            <p className="mb-4 text-white">{overview}</p>
-
-
+          <div className="p-8 rounded-lg bg-gray-900 shadow-lg">
+            <h2 className="text-3xl font-bold text-purple-600 mb-4">{title}</h2>
+            <div
+              className="ud-course-body mb-4 text-white"
+              dangerouslySetInnerHTML={{ __html: overview }}
+            />
             <p className="text-white mb-4">Please fill out the form to apply for this course.</p>
           </div>
 

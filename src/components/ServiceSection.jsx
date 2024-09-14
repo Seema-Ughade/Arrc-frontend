@@ -192,7 +192,9 @@ const textHoverVariants = {
 //   visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
 // };
 
-
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
 const services = [
   { img: seoimagenew, title: "SEO/SEM Solutions", 
     description: 
@@ -267,6 +269,7 @@ const ServiceSection = () => {
                   {service.description}
                 </motion.p>
                 <Link
+                onClick={scrollToTop}
                   to={service.link}
                   className="inline-block bg-gradient-to-r from-purple-500 via-blue-600 to-black hover:from-black hover:via-blue-600 hover:to-purple-500 rounded-xl w-[70%] px-3 py-1.5 text-white text-center mt-4 transition-all duration-300"
                 >

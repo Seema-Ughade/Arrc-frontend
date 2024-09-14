@@ -325,7 +325,7 @@ const ContactUsAdmin = () => {
                         onClick={handleDeleteSelected}
                         disabled={selectedContacts.length === 0}
                     >
-                        Delete Selected
+                        Delete 
                     </button>
 
 
@@ -341,12 +341,12 @@ const ContactUsAdmin = () => {
 
 
 
-                    <button
+                    {/* <button
                         className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
                         onClick={handleDeleteAll}
                     >
                         Delete All
-                    </button>
+                    </button> */}
                     <button
                                 icon={<FileExcelOutlined />}
 

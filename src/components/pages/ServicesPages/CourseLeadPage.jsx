@@ -6,12 +6,16 @@ const CourseLeadPage = () => {
   return (
     <div className="container text-white mx-auto p-6">
       {/* Hero Section */}
-      <motion.div className="relative w-full h-64 mb-6 sm:h-80 md:h-[60vh]">
-        <img
+      <div className="w-full h-64 mb-6 sm:h-80 md:h-[60vh]">
+      <img
           src={webdevpic}
           alt="Course"
-          className="w-full h-full object-cover rounded-lg shadow-lg"
+          className="w-full h-[60vh] object-cover rounded-lg shadow-lg"
         />
+      </div>
+     
+      <motion.div className="relative w-full h-64 mt-6  ">
+       
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 rounded-lg p-6">
           <h1 className="text-4xl md:text-6xl font-bold text-purple-600 mb-4 text-center">
             Master Web Development
@@ -29,7 +33,9 @@ const CourseLeadPage = () => {
       </motion.div>
 
       {/* Course Details */}
-      <motion.div className="text-center text-white mb-12">
+      <motion.div        className="flex flex-col items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:mb-10 lg:mt-10">
+
+
         <h2 className="text-4xl md:text-5xl text-purple-600 font-bold mb-6">
           What You Will Learn
         </h2>
@@ -120,8 +126,8 @@ const CourseLeadPage = () => {
       </motion.div>
 
       {/* Schedule */}
-      <motion.div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      <motion.div className=" mb-12">
+        <h2 className="text-4xl text-center md:text-5xl font-bold mb-6">
           Course Schedule
         </h2>
         <ul className="list-disc list-inside pl-6 mx-auto max-w-4xl">
@@ -151,26 +157,26 @@ const CourseLeadPage = () => {
             type="text"
             name="name"
             placeholder="Your Name"
-            className="p-4 border border-gray-400 rounded-lg shadow-sm"
+            className="p-2 border border-gray-400 rounded-lg shadow-sm"
             required
           />
           <input
             type="email"
             name="email"
             placeholder="Your Email"
-            className="p-4 border border-gray-400 rounded-lg shadow-sm"
+            className="p-2 border border-gray-400 rounded-lg shadow-sm"
             required
           />
           <textarea
             name="message"
             placeholder="Your Message"
             rows="4"
-            className="p-4 border border-gray-400 rounded-lg shadow-sm"
+            className="p-2 border border-gray-400 rounded-lg shadow-sm"
             required
           ></textarea>
           <button
             type="submit"
-            className="px-8 py-4 bg-purple-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors"
+            className="px-8 py-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors"
           >
             Submit
           </button>

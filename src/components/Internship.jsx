@@ -31,22 +31,22 @@ const Internship = () => {
         
   // InternshipCard Component
   const InternshipCard = ({ title, overview, details, popular }) => (
-    <div className=" border-2 bg-gray-900 border-[#d4deff] rounded-lg p-[45px] px-[30px] text-center shadow-lg mb-10 relative animate-fadeInUp box-border">
+    <div className=" border-2 bg-gray-900  h-[420px] border-[#d4deff] rounded-lg p-[45px] px-[30px] text-center shadow-lg mb-10 relative animate-fadeInUp box-border">
       {popular && (
         <span className="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full absolute top-2 right-2">
           POPULAR
         </span>
       )}
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="mb-4">{overview}</p>
-      <div className="ud-internship-body mb-4">
+      <h3 className="text-xl font-bold mb-2  h-[70px]">{title}</h3>
+      <p className="mb-4 h-[50px]">{overview}</p>
+      <div className="ud-internship-body h-[100px] mb-4">
         <ul className="list-none p-0 m-0">
           {details.map((detail, index) => (
             <li key={index} className="mb-2">{detail}</li>
           ))}
         </ul>
       </div>
-      <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Apply Now</button>
+      <button className="bg-blue-500 h-[35px] text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Apply Now</button>
     </div>
     );
 
@@ -83,7 +83,7 @@ const Internship = () => {
       {
         title: 'Cyber Security Internship',
         overview: 'Overview',
-        details: ['Caesar Cipher', 'Pixel Manipulation', 'Password Complexity', 'Keyloggers', 'Network Packet Analysis'],
+        details: ['Caesar Cipher', 'Pixel Manipulation',  'Network Packet Analysis'],
       },
     ];
 
@@ -273,10 +273,10 @@ const Internship = () => {
 
   // ContactUs Component
   const ContactUs = () => (
-    <div className="p-6 md:p-12 ">
-      <div className="flex flex-col md:flex-row">
+    <div className="p-6  ">
+      <div className=" ">
         {/* Left Section - Contact Details */}
-        <div className="md:w-1/2 text-center md:text-left mb-6 md:mb-0">
+        <div className=" text-center md:text-left mb-6 md:mb-0">
           <h2 className="text-3xl font-bold text-purple-600 mb-4">Let’s Talk About</h2>
           <p className="mb-4 text-white">We'd love to hear from you!</p>
           <h3 className="text-xl font-bold text-purple-600 mb-2">Our Location</h3>
@@ -286,7 +286,7 @@ const Internship = () => {
         </div>
   
         {/* Right Section - Contact Form */}
-        <div className="md:w-1/2">
+        {/* <div className="md:w-1/2">
           <h2 className="text-3xl text-purple-600 font-bold mb-4">Send Us a Message</h2>
           <form className="bg-gray-900 p-6 rounded-lg shadow-lg space-y-4">
             <div className="mb-4">
@@ -336,7 +336,7 @@ const Internship = () => {
               Send Message
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );

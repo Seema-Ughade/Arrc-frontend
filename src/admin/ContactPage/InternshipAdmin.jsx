@@ -1035,7 +1035,7 @@ const InternshipAdmin = () => {
             onClick={deleteSelectedApplications}
             disabled={selectedApplications.length === 0}
           >
-            Delete Selected
+            Delete All
           </Button>
         </div>
       </div>

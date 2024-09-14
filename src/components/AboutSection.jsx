@@ -28,6 +28,8 @@ const AboutSection = () => {
     });
   }, []);
 
+  
+
   return (
     <><section className="about-us-section py-12 px-4 sm:px-8 lg:px-16  text-white">
     <div className="container mx-auto">
@@ -47,24 +49,21 @@ const AboutSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          We assure you the best innovative and creative solutions for digital marketing and web development. We promise to deliver cost-effective online marketing solutions to maximize your profit. Arrc Technology stands out from traditional marketing agencies by focusing on 100% customer satisfaction and results-oriented marketing in the digital world.
-        </motion.p>
+At Arrc Technology, we specialize in delivering state-of-the-art digital marketing and web development solutions tailored to maximize your profitability. We are committed to providing cost-effective strategies that set us apart from traditional agencies by prioritizing 100% customer satisfaction and results-oriented marketing.        </motion.p>
         <motion.p
           className="text-base sm:text-lg mb-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          We have evolved to offer a range of services including Digital Marketing, Web Development, Website Development, Online Application Development, Search Engine Optimization, Internet Marketing, Online Branding, E-commerce Solutions, and Mobile Application Development.
-        </motion.p>
+Our diverse range of services includes Digital Marketing, Web and Website Development, Online Application Development, Search Engine Optimization, Internet Marketing, Online Branding, E-commerce Solutions, and Mobile Application Development. With nearly a decade of experience in IT and Digital Marketing, our team is known for its creativity and innovation.        </motion.p>
         <motion.p
           className="text-base sm:text-lg mb-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.4 }}
         >
-          Our team is creative and committed to innovation. We prioritize data analysis before undertaking any digital media planning and marketing work. With nearly a decade of experience in IT and Digital Marketing, our founders drive innovation across industry verticals.
-        </motion.p>
+We base our digital media planning and marketing efforts on thorough data analysis, ensuring that every strategy is informed and effective. Our founders' extensive experience drives our focus on innovation, positioning our clients’ websites for substantial growth and a competitive market advantage. At Arrc Technology, our primary objective is to enhance your online presence and achieve remarkable growth for your business.        </motion.p>
         <motion.p
           className="text-base sm:text-lg"
           initial={{ opacity: 0 }}
@@ -80,7 +79,7 @@ const AboutSection = () => {
         {/* Vision */}
         <div ref={visionRef} className="flex-1 mb-8 md:mb-0 md:w-1/3">
           <motion.h3
-            className="text-xl sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-4"
+            className="text-xl text-center sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
@@ -88,7 +87,7 @@ const AboutSection = () => {
             Our Vision
           </motion.h3>
           <motion.p
-            className="text-base sm:text-lg text-gray-300"
+            className="text-base text-center sm:text-lg text-gray-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -100,7 +99,7 @@ const AboutSection = () => {
         {/* Mission */}
         <div ref={missionRef} className="flex-1 mb-8 md:mb-0 md:w-1/3">
           <motion.h3
-            className="text-xl sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-4"
+            className="text-xl text-center sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
@@ -108,7 +107,7 @@ const AboutSection = () => {
             Our Mission
           </motion.h3>
           <motion.p
-            className="text-base sm:text-lg text-gray-300"
+            className="text-base text-center sm:text-lg text-gray-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -118,9 +117,9 @@ const AboutSection = () => {
         </div>
 
         {/* Quality Policy */}
-        <div ref={qualityRef} className="flex-1 md:w-1/3">
+        <div ref={qualityRef} className="flex-1  md:w-1/3">
           <motion.h3
-            className="text-xl sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-4"
+            className="text-xl text-center sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
@@ -128,7 +127,7 @@ const AboutSection = () => {
             Quality Policy
           </motion.h3>
           <motion.p
-            className="text-base sm:text-lg text-gray-300"
+            className="text-base text-center sm:text-lg text-gray-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -149,7 +148,7 @@ const AboutSection = () => {
           Aligning & Accelerating Business Results
         </motion.h3>
         <motion.p
-          className="text-base sm:text-lg text-gray-300 mb-8"
+          className="text-base text-center sm:text-lg text-gray-300 mb-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}

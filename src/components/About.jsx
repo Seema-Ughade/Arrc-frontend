@@ -80,10 +80,14 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const About = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <div className="py-16">
-        <div className="flex flex-col items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:mb-10 lg:mt-10">
+        <div className="flex flex-col items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
           <div className="flex flex-wrap w-full gap-6 relative">
             {/* Image Column */}
             <div className="lg:w-5/12 md:w-full sm:w-5/12 relative">
@@ -123,18 +127,20 @@ const About = () => {
                     transition={{ duration: 0.7, delay: 0.2 }}
                   >
                     <strong>
-                      We assure you to give the best innovative, creative solutions for digital marketing & web development. We promised to give a cost-effective online marketing solution to maximize profit.
+                    At Arrc Technology, we specialize in providing cutting-edge digital marketing and web development solutions to enhance profitability and customer satisfaction. 
                     </strong>
                   </motion.div>
                 </div>
                 <p className="text-white mb-4">
-                  Arrc Technology is the best Digital Marketing and Website Development Company. It's different from your traditional marketing agency.
+                With nearly a decade of experience, we use data-driven strategies and innovation to position our clients for growth in the competitive market. Our focus is on maximizing your online presence and driving substantial business growth.
                 </p>
                 <Link
+                              onClick={scrollToTop}
+
                   to="/about"
                   className="inline-flex items-center px-6 py-2 bg-purple-600 text-white font-semibold rounded-lg shadow-md  hover:to-purple-500 transition-all duration-300 z-20"
                 >
-                  <span>Read More</span>
+                  <span >Read More</span>
                 </Link>
               </motion.div>
             </div>

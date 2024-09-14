@@ -19,7 +19,10 @@ const Demo = () => {
       navigate(href);
     }); // Adjust the delay as needed
   };
-
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    };
+  
   const items = [
     { id: '1', href: '/website-development', src: serviceimage1, alt: 'Website Development', title: 'Website Development', content: 'Detailed information about Website Development.' },
     { id: '2', href: '/app-development', src: serviceimage2, alt: 'App Development', title: 'App Development', content: 'Detailed information about App Development.' },
@@ -45,8 +48,8 @@ const Demo = () => {
             onClick={(e) => {
               e.preventDefault(); // Prevent default link behavior
               handleClick(item.id, item.href); // Pass the href to handleClick
-            }}
-          >
+              scrollToTop(); }}     
+    >
             <img
               loading="lazy"
               decoding="async"
