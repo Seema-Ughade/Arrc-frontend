@@ -25,7 +25,7 @@ const SoftwareSol = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 leading-tight mb-6 antialiased">
+          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 leading-tight mb-6 antialiased">
             Our Software Solutions
           </h2>
         </motion.div>
@@ -40,7 +40,7 @@ const SoftwareSol = () => {
             transition={{ duration: 1 }}
             data-aos="fade-right"
           >
-            <h3 className="text-3xl md:text-4xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 antialiased">
+            <h3 className="text-3xl md:text-4xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 antialiased">
               Custom Software Development
             </h3>
             <p className="text-base md:text-lg text-gray-300 leading-relaxed">
@@ -56,7 +56,7 @@ const SoftwareSol = () => {
             transition={{ duration: 1 }}
             data-aos="fade-left"
           >
-            <h3 className="text-3xl md:text-4xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 antialiased">
+            <h3 className="text-3xl md:text-4xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 antialiased">
               Cloud Solutions
             </h3>
             <p className="text-base md:text-lg text-gray-300 leading-relaxed">

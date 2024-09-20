@@ -17,7 +17,7 @@ const CourseLeadPage = () => {
       <motion.div className="relative w-full h-64 mt-6  ">
        
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 rounded-lg p-6">
-          <h1 className="text-4xl md:text-6xl font-bold text-purple-600 mb-4 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-custom-purple mb-4 text-center">
             Master Web Development
           </h1>
           <p className="text-lg md:text-xl text-white text-center mb-6">
@@ -25,7 +25,7 @@ const CourseLeadPage = () => {
           </p>
           <a
             href="#lead-form"
-            className="px-8 py-4 bg-purple-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors"
+            className="px-8 py-4 bg-custom-purple text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors"
           >
             Enroll Now
           </a>
@@ -36,7 +36,7 @@ const CourseLeadPage = () => {
       <motion.div        className="flex flex-col items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:mb-10 lg:mt-10">
 
 
-        <h2 className="text-4xl md:text-5xl text-purple-600 font-bold mb-6">
+        <h2 className="text-4xl md:text-5xl text-custom-purple font-bold mb-6">
           What You Will Learn
         </h2>
         <p className="text-lg md:text-xl mb-6">
@@ -102,7 +102,7 @@ const CourseLeadPage = () => {
         </p>
         <a
           href="#lead-form"
-          className="px-8 py-4 bg-purple-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors"
+          className="px-8 py-4 bg-custom-purple text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors"
         >
           Enroll Now
         </a>
@@ -145,7 +145,7 @@ const CourseLeadPage = () => {
         id="lead-form"
         className="bg-gray-800 lg:w-1/2 mx-auto p-6 rounded-lg shadow-lg"
       >
-        <h2 className="text-3xl md:text-4xl text-purple-600 font-bold mb-4 text-center">
+        <h2 className="text-3xl md:text-4xl text-custom-purple font-bold mb-4 text-center">
           Sign Up for More Information
         </h2>
         <form
@@ -176,7 +176,7 @@ const CourseLeadPage = () => {
           ></textarea>
           <button
             type="submit"
-            className="px-8 py-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors"
+            className="px-8 py-2 bg-custom-purple text-white font-semibold rounded-lg hover:bg-pink-700 transition-colors"
           >
             Submit
           </button>

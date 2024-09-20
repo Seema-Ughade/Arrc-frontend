@@ -39,7 +39,7 @@ const CourseForm = () => {
       <div className="container mx-auto px-6 py-12">
         <button
           onClick={() => navigate('/courseSection')}
-          className="bg-purple-600 text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700 mb-8"
+          className="bg-custom-purple text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700 mb-8"
         >
           Back
         </button>
@@ -48,7 +48,7 @@ const CourseForm = () => {
           {/* Left Side: Course Details */}
           {/* Left Side: Course Details */}
           <div className="p-8 rounded-lg bg-gray-900 shadow-lg">
-            <h2 className="text-3xl font-bold text-purple-600 mb-4">{title}</h2>
+            <h2 className="text-3xl font-bold text-custom-purple mb-4">{title}</h2>
             <div
               className="ud-course-body mb-4 text-white"
               dangerouslySetInnerHTML={{ __html: overview }}
@@ -58,7 +58,7 @@ const CourseForm = () => {
 
           {/* Right Side: Application Form */}
           <div className=" p-8 rounded-lg bg-gray-900 shadow-lg">
-            <h2 className="text-3xl font-bold text-purple-600 mb-6">Apply for {title}</h2>
+            <h2 className="text-3xl font-bold text-custom-purple mb-6">Apply for {title}</h2>
             <Formik
               initialValues={{
                 name: '',
@@ -151,7 +151,7 @@ const CourseForm = () => {
 
                     <button
                       type="submit"
-                      className="bg-purple-600 text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700"
+                      className="bg-custom-purple text-white font-semibold py-2 px-4 rounded-md shadow-md hover:bg-blue-700"
                     >
                       Submit
                     </button>

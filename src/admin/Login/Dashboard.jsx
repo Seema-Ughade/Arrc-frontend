@@ -5,10 +5,11 @@ import AdminNavbar from './AdminNavbar';
 import InternshipAdmin from '../ContactPage/InternshipAdmin';
 import ContactusAdmin from '../ContactPage/ContactusAdmin';
 import CoursesAdmin from '../Course/CoursesAdmin';
+import AdminDashboard from '../Login/AdminDashboard'
 
 const Dashboard = ({ handleLogout }) => {
     return (
-        <div className="flex h-[100vh] ">
+        <div className="flex  ">
             <AdminSidebar  className = ' '/>
             <div className="flex-1 flex flex-col">
                 <AdminNavbar handleLogout={handleLogout} />
@@ -17,6 +18,7 @@ const Dashboard = ({ handleLogout }) => {
                         <Route path="/InternshipAdmin" element={<InternshipAdmin />} />
                         <Route path="/contactus" element={<ContactusAdmin />} />
                         <Route path="/courses" element={<CoursesAdmin />} />
+                        <Route path="/AdminDashboard" element={<AdminDashboard />} />
                     </Routes>
                 </main>
             </div>

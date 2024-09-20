@@ -31,12 +31,13 @@ const AboutSection = () => {
   
 
   return (
-    <><section className="about-us-section py-12 px-4 sm:px-8 lg:px-16  text-white">
-    <div className="container mx-auto">
+    <><section className="about-us-section py-12 px-4    text-white">
+    <div className="container mx-auto  sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1245px] xl-max:max-w-[1440px] 2xl:max-w-[1536px]">
+
       {/* Introduction Section */}
       <div ref={introRef} className="text-center mb-12">
         <motion.h2
-          className="text-3xl sm:text-4xl font-bold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-6"
+          className="text-3xl sm:text-4xl font-bold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-custom-purple via-pink-500 to-blue-500 mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
@@ -79,7 +80,7 @@ We base our digital media planning and marketing efforts on thorough data analys
         {/* Vision */}
         <div ref={visionRef} className="flex-1 mb-8 md:mb-0 md:w-1/3">
           <motion.h3
-            className="text-xl text-center sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-4"
+            className="text-xl text-center sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-custom-purple via-pink-500 to-blue-500 mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
@@ -99,7 +100,7 @@ We base our digital media planning and marketing efforts on thorough data analys
         {/* Mission */}
         <div ref={missionRef} className="flex-1 mb-8 md:mb-0 md:w-1/3">
           <motion.h3
-            className="text-xl text-center sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-4"
+            className="text-xl text-center sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-custom-purple via-pink-500 to-blue-500 mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
@@ -119,7 +120,7 @@ We base our digital media planning and marketing efforts on thorough data analys
         {/* Quality Policy */}
         <div ref={qualityRef} className="flex-1  md:w-1/3">
           <motion.h3
-            className="text-xl text-center sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-4"
+            className="text-xl text-center sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-custom-purple via-pink-500 to-blue-500 mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
@@ -140,7 +141,7 @@ We base our digital media planning and marketing efforts on thorough data analys
       {/* Business Results Section */}
       <div ref={resultsRef} className="text-center">
         <motion.h3
-          className="text-xl sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 mb-4"
+          className="text-xl sm:text-2xl font-semibold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-custom-purple via-pink-500 to-blue-500 mb-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
@@ -161,7 +162,7 @@ We base our digital media planning and marketing efforts on thorough data analys
       </div>
     </div>
   </section>
-  <ProcessTimeline/>
+  {/* <ProcessTimeline/> */}
   </>
     
   );

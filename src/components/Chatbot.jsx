@@ -97,7 +97,7 @@ const Chatbot = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/yourwhatsappphonenumber', '_blank'); // Replace with your WhatsApp number
+    window.open('https://wa.link/zkcnv2', '_blank'); // Replace with your WhatsApp number
     setShowWhatsAppPrompt(false);
   };
 

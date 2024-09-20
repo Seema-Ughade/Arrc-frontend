@@ -5,7 +5,7 @@ import webdevpic from '../../../assets/webdevpic.jpg';
 
 const Webpage = () => {
   return (
-    <div className="container mx-auto p-6  text-white">
+    <div className="container mx-auto p-6  text-white sm:max-w-[800px] md:max-w-[1000px] lg:max-w-[1100px] xl:max-w-[1400px] xl-max:max-w-[1600px] 2xl:max-w-[1800px]">
       {/* Full Width Image with 1/3 Height */}
       <motion.div
         className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
@@ -35,7 +35,7 @@ const Webpage = () => {
         data-aos="fade-up"
       >
         <div className="w-full lg:w-3/4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 leading-tight antialiased transition-transform transform hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-600 hover:to-blue-600">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 leading-tight antialiased transition-transform transform hover:bg-gradient-to-r hover:from-pink-500 hover:via-custom-purple hover:to-blue-600">
             WEB Design & Development Company
           </h1>
           <p className="text-lg md:text-xl mb-4 text-white leading-relaxed font-normal antialiased">
@@ -66,7 +66,7 @@ const Webpage = () => {
           />
         </div>
         <div className="lg:w-1/2 w-full lg:pl-6 lg:text-left text-left">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 leading-tight antialiased transition-transform transform hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-600 hover:to-blue-600">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 leading-tight antialiased transition-transform transform hover:bg-gradient-to-r hover:from-pink-500 hover:via-custom-purple hover:to-blue-600">
             Responsive Web Design
           </h2>
           <p className="text-lg md:text-xl mb-4 text-white leading-relaxed font-normal antialiased">
@@ -88,7 +88,7 @@ const Webpage = () => {
       >
         {/* What We Offer */}
         <div className="lg:w-1/2 w-full mb-4 lg:mb-0">
-          <h3 className="text-3xl md:text-4xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 leading-tight antialiased transition-transform transform hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-600 hover:to-blue-600">
+          <h3 className="text-3xl md:text-4xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 leading-tight antialiased transition-transform transform hover:bg-gradient-to-r hover:from-pink-500 hover:via-custom-purple hover:to-blue-600">
             What We Offer
           </h3>
           <ul className="list-disc list-inside pl-6 text-white leading-relaxed font-normal antialiased">
@@ -105,7 +105,7 @@ const Webpage = () => {
 
         {/* Why Arrc Technology */}
         <div className="lg:w-1/2 w-full mb-4 lg:mb-0">
-          <h3 className="text-3xl md:text-4xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 leading-tight antialiased transition-transform transform hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-600 hover:to-blue-600">
+          <h3 className="text-3xl md:text-4xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 leading-tight antialiased transition-transform transform hover:bg-gradient-to-r hover:from-pink-500 hover:via-custom-purple hover:to-blue-600">
             Why Arrc Technology for Website Design and Development?
           </h3>
           <ul className="list-disc list-inside pl-6 text-white leading-relaxed font-normal antialiased">

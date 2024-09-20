@@ -92,7 +92,7 @@ const Counter = ({ end }) => {
 
   return (
     <motion.div
-      className="text-center p-6 rounded-lg shadow-lg border border-gray-200 hover:bg-purple-600 bg-gradient-to-r from-gray-600 via-gray-700 to-gray-800"
+      className="text-center p-6 rounded-lg shadow-lg border border-gray-200 hover:bg-custom-purple bg-gradient-to-r from-gray-600 via-gray-700 to-gray-800"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.7 }}
@@ -111,8 +111,8 @@ const Counter = ({ end }) => {
 
 const Home = () => {
   return (
-    <div className="px-6 py-8 ">
-      <div className="flex  flex-wrap justify-center gap-6">
+<div className="container sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1245px] xl-max:max-w-[1440px] 2xl:max-w-[1536px]">
+<div className="flex  flex-wrap justify-center gap-6">
         {/* Counter Column */}
         <div className="w-full  sm:w-1/2 md:w-1/6 text-center">
           <Counter end={9} />

@@ -23,7 +23,7 @@ const InternshipCard = ({ title, overview, details, popular }) => {
         </span>
       )}
       <h3 
-                  className="text-lg sm:text-xl lg:text-2xl font-bold mt-4 text-gradient bg-clip-text h-[70px]  text-purple-600 text-center hover:text-white transition-colors duration-300"
+                  className="text-lg sm:text-xl lg:text-2xl font-bold mt-4 text-gradient bg-clip-text h-[70px]  text-custom-purple text-center hover:text-white transition-colors duration-300"
                   >{title}</h3>
       {/* <p className="mb-4 h-[40px]">{overview}</p> */}
       <p className="mb-2  h-[50px] box-border text-ellipsis overflow-hidden line-clamp-2">
@@ -49,7 +49,7 @@ const InternshipCard = ({ title, overview, details, popular }) => {
   scrollToTop();
 }}
 
-className="inline-block bg-gradient-to-r box-border h-[35px] from-purple-500 via-blue-600 to-black hover:from-black hover:via-blue-600 hover:to-purple-500 rounded-xl w-[60%] px-3 py-1.5 text-white text-center mt-4 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+className="inline-block bg-gradient-to-r box-border h-[35px] from-custom-purple via-blue-600 to-black hover:from-black hover:via-blue-600 hover:to-custom-purple rounded-xl w-[60%] px-3 py-1.5 text-white text-center mt-4 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
               style={{
                 boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
                 transition: "transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease",
@@ -110,7 +110,7 @@ const InternshipCourse = () => {
         <div className="text-center mb-12">
           <div className="ud-section-title mx-auto">
             <span
-                  className="text-lg sm:text-xl lg:text-4xl  font-bold mt-4 text-gradient bg-clip-text   text-purple-600 text-center hover:text-white transition-colors duration-300"
+                  className="text-lg sm:text-xl lg:text-4xl  font-bold mt-4 text-gradient bg-clip-text   text-custom-purple text-center hover:text-white transition-colors duration-300"
                   >Internships</span>
             <h2 className="text-xl font-bold mt-2 mb-2">Our Internships</h2>
             <p className="font-semibold mb-2 block">

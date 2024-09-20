@@ -34,13 +34,13 @@ const Breadcrumbs = () => {
           return (
             <motion.li
               key={href}
-              className={`flex items-center before:w-1 before:h-1 before:rounded-full before:bg-purple-600 before:inline-block before:relative before:-top-0.5 before:mx-4 ${isLast ? 'text-purple-600' : ''}`}
+              className={`flex items-center before:w-1 before:h-1 before:rounded-full before:bg-custom-purple before:inline-block before:relative before:-top-0.5 before:mx-4 ${isLast ? 'text-custom-purple' : ''}`}
               whileHover={{ scale: 1.1, rotate: 5 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
               {isLast ? (
-                <span className="p-2.5 border border-gray-500/20 rounded-md shadow flex items-center justify-center dark:border-0 dark:bg-[#191e3a] text-purple-600">
-                  <svg className="w-4 h-4 mr-2 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <span className="p-2.5 border border-gray-500/20 rounded-md shadow flex items-center justify-center dark:border-0 dark:bg-[#191e3a] text-custom-purple">
+                  <svg className="w-4 h-4 mr-2 text-custom-purple" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                   {pathname}

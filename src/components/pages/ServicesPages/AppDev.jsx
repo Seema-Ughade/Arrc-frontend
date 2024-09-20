@@ -12,7 +12,7 @@ const AppDev = () => {
 
   return (
     <section className=" py-12 text-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:max-w-[800px] md:max-w-[1000px] lg:max-w-[1100px] xl:max-w-[1400px] xl-max:max-w-[1600px] 2xl:max-w-[1800px]">
         <div className="flex flex-col items-center text-center">
           {/* Full Width Background Image Section */}
           <motion.div
@@ -45,7 +45,7 @@ const AppDev = () => {
               transition={{ duration: 1 }}
               data-aos="fade-up"
             >
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 leading-tight antialiased">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 leading-tight antialiased">
                 Mobile App Development
               </h3>
               <p className="text-base md:text-lg text-gray-300 mb-4 leading-relaxed">
@@ -67,7 +67,7 @@ const AppDev = () => {
               transition={{ duration: 1 }}
               data-aos="fade-left"
             >
-              <h4 className="text-2xl md:text-3xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 leading-tight antialiased">
+              <h4 className="text-2xl md:text-3xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 leading-tight antialiased">
                 Mobile App Development Company
               </h4>
               <p className="text-base md:text-lg text-gray-400 leading-relaxed mb-4">
@@ -93,7 +93,7 @@ const AppDev = () => {
               transition={{ duration: 1 }}
               data-aos="fade-right"
             >
-              <h5 className="text-xl md:text-2xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 leading-tight antialiased">
+              <h5 className="text-xl md:text-2xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 leading-tight antialiased">
                 What We Offer Under Mobile Application Development Services
               </h5>
               <ul className="list-disc list-inside pl-5 text-base md:text-lg text-gray-400 mb-4">
@@ -113,7 +113,7 @@ const AppDev = () => {
               transition={{ duration: 1 }}
               data-aos="fade-up"
             >
-              <h5 className="text-xl md:text-2xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 leading-tight antialiased">
+              <h5 className="text-xl md:text-2xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-custom-purple to-blue-500 leading-tight antialiased">
                 Why Arrc Technology for Mobile Application Development?
               </h5>
               <ul className="list-disc list-inside pl-5 text-base md:text-lg text-gray-400">

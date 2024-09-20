@@ -47,10 +47,10 @@ const AdminNavbar = ({ collapsed, setCollapsed }) => {
         <Button type="link" onClick={handleLightMode} icon={<SunOutlined />} className="hidden md:inline" />
 
         {/* Responsive Dark and Light Mode Buttons */}
-        <div className="md:hidden">
+        {/* <div className="md:hidden">
           <Button type="link" onClick={handleDarkMode} icon={<MoonOutlined />} />
           <Button type="link" onClick={handleLightMode} icon={<SunOutlined />} />
-        </div>
+        </div> */}
 
         {/* User Icon and Logout Button */}
         <div className="flex items-center space-x-4">

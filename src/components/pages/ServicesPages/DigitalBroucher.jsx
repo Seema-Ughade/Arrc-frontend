@@ -28,7 +28,7 @@ const DigitalBroucher = () => {
   };
 
   return (
-    <div className="space-y-12 px-4 py-8  text-white">
+    <div className="space-y-12 px-4 py-8  text-white sm:max-w-[800px] md:max-w-[1000px] lg:max-w-[1100px] xl:max-w-[1400px] xl-max:max-w-[1600px] 2xl:max-w-[1800px]">
       {/* Full-Width Background Image */}
       <motion.div
         className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
@@ -55,7 +55,7 @@ const DigitalBroucher = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       >
-        <h1 className="text-4xl font-bold text-purple-600">
+        <h1 className="text-4xl font-bold text-custom-purple">
           Digital Brochure
         </h1>
       </motion.div>

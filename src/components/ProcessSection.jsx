@@ -210,7 +210,7 @@ import './ProcessSection.css'; // Import the CSS file
 
 const ProcessSection = () => {
   return (
-    <section className=" py-16">
+    <section className=" py-4">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <motion.h3

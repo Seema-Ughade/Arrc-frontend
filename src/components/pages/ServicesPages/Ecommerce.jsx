@@ -21,7 +21,7 @@ const Ecommerce = () => {
   }, []);
 
   return (
-    <div className="space-y-12 px-4 md:px-10">
+    <div className="space-y-12 px-4 sm:max-w-[800px] md:max-w-[1000px] lg:max-w-[1100px] xl:max-w-[1400px] xl-max:max-w-[1600px] 2xl:max-w-[1800px]">
       {/* First Section - ecom1 image */}
       <motion.div
         className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"

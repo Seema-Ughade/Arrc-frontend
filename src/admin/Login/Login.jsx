@@ -138,16 +138,16 @@ const Login = ({ setIsAuthenticated }) => {
                 <form onSubmit={formik.handleSubmit} className="w-full p-8 space-y-6">
                     <h1 className="text-3xl font-bold text-gray-900">Login</h1>
                     <div className="flex space-x-4 mb-6">
-                        <a href="#" className="text-purple-600 hover:text-blue-600">
+                        <a href="https://www.facebook.com/Thearrctechnologyofficial" target="_blank" rel="noopener noreferrer"  className="text-purple-600 hover:text-blue-600">
                             <i className="fa fa-facebook-square text-2xl"></i>
                         </a>
-                        <a href="#" className="text-purple-600 hover:text-blue-400">
+                        <a href="https://x.com/arrctech" target="_blank" rel="noopener noreferrer"  className="text-purple-600 hover:text-blue-400">
                             <i className="fa fa-twitter text-2xl"></i>
                         </a>
-                        <a href="#" className="text-purple-600 hover:text-blue-600">
+                        <a href="https://www.instagram.com/arrctech/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-blue-600">
                             <i className="fa fa-instagram text-2xl"></i>
                         </a>
-                        <a href="#" className="text-purple-600 hover:text-blue-400">
+                        <a href="https://www.linkedin.com/company/arrctech/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-blue-400">
                             <i className="fa fa-linkedin text-2xl"></i>
                         </a>
                     </div>

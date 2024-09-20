@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const CyberSecPage = () => {
   return (
-    <div className="container mx-auto p-6  text-white">
+    <div className="container mx-auto p-6  text-white sm:max-w-[800px] md:max-w-[1000px] lg:max-w-[1100px] xl:max-w-[1400px] xl-max:max-w-[1600px] 2xl:max-w-[1800px]">
       {/* Full Width Background Image Section */}
       <motion.div
         className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
@@ -28,7 +28,7 @@ const CyberSecPage = () => {
       {/* Content Section */}
       <div className="flex flex-col items-center mb-12 px-4 lg:px-0">
         <div className="w-full lg:w-3/4 text-center">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 leading-tight antialiased transition-colors duration-500 hover:text-[#4A5568]">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-custom-purple via-pink-500 to-blue-500 leading-tight antialiased transition-colors duration-500 hover:text-[#4A5568]">
         We Secure Your Enterprise & Web Site
           </h1>
           <p className="text-lg mb-6 leading-relaxed font-normal text-gray-300 antialiased transition-opacity duration-500 hover:opacity-90">

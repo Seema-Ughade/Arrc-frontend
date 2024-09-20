@@ -990,7 +990,7 @@ const InternshipAdmin = () => {
               align: 'center', // This will center the title and content
 
       render: (_, record) => (
-        <div className='space-x-2'> 
+        <div className='space-x-2 '> 
           <Button
             className="bg-blue-500 text-white     hover:bg-blue-600"
 

@@ -19,7 +19,7 @@ const CatalogDownload = () => {
         <Button 
           className='bg-purple-500 p-4'
           type="primary" 
-          icon={<DownloadOutlined size={44} />} 
+          icon={<DownloadOutlined size={40} />} 
           onClick={handleDownload} 
           style={styles.button}
           shape="circle" // Make the button circular
@@ -34,7 +34,7 @@ const styles = {
   container: {
     position: 'fixed',
     bottom: '80px', 
-    right: '20px', 
+    right: '18px', 
     zIndex: 50 
   },
   button: {
@@ -42,7 +42,7 @@ const styles = {
     color: '#fff',
     fontWeight: 'bold',
     fontSize: '26px', // Larger font size for better visibility
-    padding: '28px', // Adjust padding for circle button
+    padding: '24px', // Adjust padding for circle button
     borderRadius: '50%', // Circular button
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' // Optional: add shadow for better visibility
   }

@@ -96,7 +96,7 @@ import seoiamge from '../../../assets/seoiamge.jpg';
 
 const SEOPage = () => {
     return (
-        <div className="container mx-auto p-6  text-white">
+        <div className="container mx-auto p-6  text-white sm:max-w-[800px] md:max-w-[1000px] lg:max-w-[1100px] xl:max-w-[1400px] xl-max:max-w-[1600px] 2xl:max-w-[1800px]">
             {/* Full Width Image with 1/4 Height */}
             <motion.div
         className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
@@ -124,7 +124,7 @@ const SEOPage = () => {
                         initial={{ opacity: 0, y: 20 }} 
                         animate={{ opacity: 1, y: 0 }} 
                         transition={{ duration: 0.6 }}
-                        className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 leading-tight antialiased transition-colors duration-500 hover:text-[#4A5568]"
+                        className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-custom-purple via-pink-500 to-blue-500 leading-tight antialiased transition-colors duration-500 hover:text-[#4A5568]"
                     >
                         Best SEO Services for Optimal Results
                     </motion.h1>
@@ -163,7 +163,7 @@ const SEOPage = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="lg:w-1/2 w-full lg:pl-6 lg:text-left mb-6 lg:mb-0"
                 >
-                    <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 leading-tight antialiased transition-colors duration-500 hover:text-[#4A5568]">
+                    <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-custom-purple via-pink-500 to-blue-500 leading-tight antialiased transition-colors duration-500 hover:text-[#4A5568]">
                         Why Companies Should Invest in SEO
                     </h2>
                     <motion.p 
@@ -211,7 +211,7 @@ const SEOPage = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="bg-black p-6 mx-4 lg:mx-0 shadow-md text-center"
             >
-                       <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 leading-tight antialiased transition-colors duration-500 hover:text-[#4A5568]">
+                       <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-gradient bg-clip-text text-transparent bg-gradient-to-r from-custom-purple via-pink-500 to-blue-500 leading-tight antialiased transition-colors duration-500 hover:text-[#4A5568]">
                         Search Engine Marketing (SEM)
                 </h2>
                 <motion.p 

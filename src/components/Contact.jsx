@@ -75,7 +75,7 @@ const Contact = () => {
                         <div className="lg:w-1/2 w-full">
                             <div className="default-form contact-form">
                                 <div className="title mb-6">
-                                    <h4 className="text-xl sm:text-2xl font-semibold text-purple-600">Let's Talk About Your Business</h4>
+                                    <h4 className="text-xl sm:text-2xl font-semibold text-custom-purple">Let's Talk About Your Business</h4>
                                 </div>
 
                                 <Formik
@@ -128,7 +128,7 @@ const Contact = () => {
 
                                             <button
                                                 type="submit"
-                                                className="theme-btn btn-style-four bg-purple-700 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition duration-300"
+                                                className="theme-btn btn-style-four bg-custom-purple text-white px-6 py-2 rounded-md hover:bg-custom-purple transition duration-300"
                                                 disabled={isSubmitting}
                                             >
                                                 {isSubmitting ? 'Submitting...' : 'Submit'}
@@ -152,9 +152,9 @@ const Contact = () => {
                     </div>
 
                     <div className="flex flex-wrap justify-between mt-12">
-                        <div className="contact-info-block lg:w-1/3 w-full mb-6 lg:mb-0">
+                        <div className="contact-info-block lg:w-1/3 w-full mb-3 lg:mb-0">
                             <div className="inner-box p-4">
-                                <span className="name text-lg text-purple-600 font-semibold">Call Us</span>
+                                <span className="name text-lg text-custom-purple font-semibold">Call Us</span>
                                 <span className="info block mt-2 text-white">
                                     <a href="tel:+917502211337">+91-7502211337 / +91-9146677505</a>
                                 </span>
@@ -163,7 +163,7 @@ const Contact = () => {
 
                         <div className="contact-info-block lg:w-1/3 w-full mb-6 lg:mb-0">
                             <div className="inner-box p-4">
-                                <span className="name text-lg text-purple-600 font-semibold">Message</span>
+                                <span className="name text-lg text-custom-purple font-semibold">Message</span>
                                 <span className="info block mt-2 text-white">
                                     <a href="mailto:info@Arrc Technology.com">arrctechnology15@gmail.com</a>
                                 </span>
@@ -172,7 +172,7 @@ const Contact = () => {
 
                         <div className="contact-info-block lg:w-1/3 w-full">
                             <div className="inner-box p-4">
-                                <span className="name text-lg text-purple-600 font-semibold">Our Location</span>
+                                <span className="name text-lg text-custom-purple font-semibold">Our Location</span>
                                 <span className="info block mt-2 text-white">
                                     <a href="https://maps.google.com/?q=C3/12 Dhankwadi, Upper Sambhaji Nagar, Pune 411043">
                                         Unit No.401, 5thFloor, Ideal Square, Ideal Colony, Sr.no. 129, Kothrud, Pune-38
@@ -185,7 +185,10 @@ const Contact = () => {
             </section>
             
         </div>
+        <div className="mb-5">
         <Demo />
+
+        </div>
 
         </>
     );

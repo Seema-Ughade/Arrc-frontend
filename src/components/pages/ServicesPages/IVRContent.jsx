@@ -47,7 +47,7 @@ const IVRContent = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, staggerChildren: 0.3 }}
       >
-        <h2 className="text-3xl font-semibold mb-4 text-purple-600">Benefits of Our IVR Solutions:</h2>
+        <h2 className="text-3xl font-semibold mb-4 text-custom-purple">Benefits of Our IVR Solutions:</h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>Improved Customer Experience: Provide quick and easy access to information and support, reducing wait times and frustration.</li>
           <li>Increased Efficiency: Automate routine tasks and free up human resources for more complex issues.</li>
@@ -62,7 +62,7 @@ const IVRContent = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, staggerChildren: 0.3 }}
       >
-        <h2 className="text-3xl font-semibold mb-4 text-purple-600">Our IVR Services:</h2>
+        <h2 className="text-3xl font-semibold mb-4 text-custom-purple">Our IVR Services:</h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>Custom IVR Development: Tailored solutions to meet your specific business needs.</li>
           <li>IVR Hosting and Maintenance: Reliable and secure hosting, with regular updates and maintenance.</li>
@@ -77,7 +77,7 @@ const IVRContent = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, staggerChildren: 0.3 }}
       >
-        <h2 className="text-3xl font-semibold mb-4 text-purple-600">Industry-Specific IVR Solutions:</h2>
+        <h2 className="text-3xl font-semibold mb-4 text-custom-purple">Industry-Specific IVR Solutions:</h2>
         <ul className="list-disc pl-6 space-y-2">
           <li>Healthcare: Patient appointment reminders, prescription refill requests, and more.</li>
           <li>Finance: Account balance inquiries, payment processing, and fraud alerts.</li>
@@ -92,7 +92,7 @@ const IVRContent = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-2xl font-semibold text-purple-600 mb-4">Get Started with Our IVR Solutions Today!</h2>
+        <h2 className="text-2xl font-semibold text-custom-purple mb-4">Get Started with Our IVR Solutions Today!</h2>
         <p className="text-lg">
           Contact us to learn more about our IVR solutions and services, and take the first step towards transforming your customer experience.
         </p>

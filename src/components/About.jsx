@@ -86,7 +86,7 @@ const About = () => {
 
   return (
     <>
-      <div className="py-16">
+      <div className="sm:py-10 lg:py:16 ">
         <div className="flex flex-col items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
           <div className="flex flex-wrap w-full gap-6 relative">
             {/* Image Column */}
@@ -113,7 +113,7 @@ const About = () => {
               >
                 <div className="sec-title mb-6">
                   <motion.h3
-                    className="text-4xl font-bold mb-4 text-gradient bg-clip-text text-transparent bg-purple-600"
+                    className="text-4xl font-bold mb-4 text-gradient bg-clip-text text-transparent bg-custom-purple"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.7 }}
@@ -138,7 +138,7 @@ const About = () => {
                               onClick={scrollToTop}
 
                   to="/about"
-                  className="inline-flex items-center px-6 py-2 bg-purple-600 text-white font-semibold rounded-lg shadow-md  hover:to-purple-500 transition-all duration-300 z-20"
+                  className="inline-flex items-center px-6 py-2 bg-custom-purple text-white font-semibold rounded-lg shadow-md  hover:to-purple-500 transition-all duration-300 z-20"
                 >
                   <span >Read More</span>
                 </Link>

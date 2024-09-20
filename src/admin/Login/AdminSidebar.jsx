@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { DashboardOutlined, FileTextOutlined, AppstoreOutlined, MenuOutlined, CloseOutlined } from '@ant-design/icons';
+import { DashboardOutlined, ContactsOutlined, UnorderedListOutlined, MenuOutlined,CloseOutlined, BookOutlined } from '@ant-design/icons';
 import { Layout, Menu, Button } from 'antd';
 import logomain from '../../assets/logomain.jpeg';
 
@@ -15,13 +15,14 @@ const AdminSidebar = () => {
   };
 
   const menuItems = [
-    { key: 'InternshipAdmin', icon: <AppstoreOutlined />, label: 'Internship', to: '/InternshipAdmin' },
-    { key: 'contactus', icon: <FileTextOutlined />, label: 'Contact Us', to: '/contactus' },
-    { key: 'courses', icon: <DashboardOutlined />, label: 'Courses', to: '/courses' },
+    { key: 'AdminDashboard', icon: <DashboardOutlined />, label: 'Dashboard', to: '/AdminDashboard' },
+    { key: 'InternshipAdmin', icon: <UnorderedListOutlined />, label: 'Internship', to: '/InternshipAdmin' },
+    { key: 'contactus', icon: <ContactsOutlined />, label: 'Contact Us', to: '/contactus' },
+    { key: 'courses', icon: <BookOutlined />, label: 'Courses', to: '/courses' },
   ];
 
   return (
-    <Sider trigger={null} collapsible collapsed={collapsed} className='bg-white'>
+    <Sider trigger={null} collapsible collapsed={collapsed} className='bg-white '>
       <div className="logo">
         <img src={logomain} className="w-[100%] h-[50%]" alt="Logo" />
       </div>
@@ -32,7 +33,7 @@ const AdminSidebar = () => {
         {collapsed ? <MenuOutlined /> : <CloseOutlined style={{ color: '#fff' }} />}
       </Button>
       <Menu
-        className="mt-5"
+        className="mt-5 min-h-screen"
         theme="light"
         mode="inline"
         defaultSelectedKeys={['internship']}

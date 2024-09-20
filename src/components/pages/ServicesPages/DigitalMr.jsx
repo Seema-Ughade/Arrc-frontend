@@ -53,7 +53,7 @@ const DigitalMr = () => {
   }, []);
 
   return (
-    <div className="container mx-auto p-6  text-white">
+    <div className="container mx-auto p-6  text-white sm:max-w-[800px] md:max-w-[1000px] lg:max-w-[1100px] xl:max-w-[1400px] xl-max:max-w-[1600px] 2xl:max-w-[1800px]">
       {/* Full Width Image with 1/4 Height */}
       <motion.div
         className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"

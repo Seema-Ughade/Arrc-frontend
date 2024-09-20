@@ -12,7 +12,7 @@ const Internship = () => {
     <div className="flex flex-col md:flex-row gap-6 items-center md:items-start p-6 md:p-20 lg:p-28 text-white">
       {/* Left Section - Text Content */}
       <div className="md:w-1/2 w-full text-center md:text-left mb-6 md:mb-0">
-        <span className="text-purple-600 text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 block">About Us</span>
+        <span className="text-custom-purple text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 block">About Us</span>
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Transforming the Way People Learn</h2>
         <p className="mb-4 text-sm md:text-base lg:text-lg">
           Our mission is to create innovative and accessible learning solutions that empower people of all ages and backgrounds to achieve their full potential. Whether you're a student looking to improve your grades, a professional seeking to upskill, or an organization looking to enhance employee training, we have the tools and resources you need to succeed.
@@ -139,13 +139,13 @@ const Internship = () => {
       {
         title: 'High Quality Content',
         description: 'Great Content to prepare students for their future careers.',
-        icon: <FaStar className="text-4xl text-purple-500" />,
+        icon: <FaStar className="text-4xl text-custom-purple" />,
       },
     ];
   
     return (
 <div className="p-6 md:p-12 ">
-    <h2 className="text-4xl font-bold text-purple-600 text-center mb-8">Features of our Internships</h2>
+    <h2 className="text-4xl font-bold text-custom-purple text-center mb-8">Features of our Internships</h2>
     <div className="flex flex-wrap justify-center">
         {features.map((feature, index) => (
             <div
@@ -153,7 +153,7 @@ const Internship = () => {
                 className="bg-gray-900 rounded-lg shadow-lg p-6 m-4 w-full sm:w-1/2 lg:w-1/4 text-center"
             >
                 <div className="mb-4">{feature.icon}</div>
-                <h3 className="text-xl text-purple-600 font-bold mb-2">{feature.title}</h3>
+                <h3 className="text-xl text-custom-purple font-bold mb-2">{feature.title}</h3>
                 <p className='text-white'>{feature.description}</p>
             </div>
         ))}
@@ -221,7 +221,7 @@ const Internship = () => {
   
     return (
       <div className="p-6 md:p-12 ">
-        <h2 className="text-3xl font-bold text-center text-purple-600 mb-8">Any Questions? Answered</h2>
+        <h2 className="text-3xl font-bold text-center text-custom-purple mb-8">Any Questions? Answered</h2>
         <div className="flex flex-col md:flex-row md:justify-center md:gap-6">
           <div className="w-full md:w-1/2 mb-4 md:mb-0">
             {firstHalf.map((faq, index) => (
@@ -231,9 +231,9 @@ const Internship = () => {
                   onClick={() => handleToggle(index)}
                   aria-expanded={activeIndex === index}
                 >
-                  <span className='text-purple-600'>{faq.question}</span>
+                  <span className='text-custom-purple'>{faq.question}</span>
                   <span className="flex-shrink-0">
-                    {activeIndex === index ? <FaChevronUp className="text-purple-600" /> : <FaChevronDown className="text-purple-600" />}
+                    {activeIndex === index ? <FaChevronUp className="text-custom-purple" /> : <FaChevronDown className="text-custom-purple" />}
                   </span>
                 </button>
                 {activeIndex === index && (
@@ -252,9 +252,9 @@ const Internship = () => {
                   onClick={() => handleToggle(index + half)} // Adjust index for the second half
                   aria-expanded={activeIndex === index + half}
                 >
-                  <span className='text-purple-600'>{faq.question}</span>
+                  <span className='text-custom-purple'>{faq.question}</span>
                   <span className="flex-shrink-0">
-                    {activeIndex === index + half ? <FaChevronUp className="text-purple-600" /> : <FaChevronDown className="text-purple-600" />}
+                    {activeIndex === index + half ? <FaChevronUp className="text-custom-purple" /> : <FaChevronDown className="text-custom-purple" />}
                   </span>
                 </button>
                 {activeIndex === index + half && (
@@ -277,11 +277,11 @@ const Internship = () => {
       <div className=" ">
         {/* Left Section - Contact Details */}
         <div className=" text-center md:text-left mb-6 md:mb-0">
-          <h2 className="text-3xl font-bold text-purple-600 mb-4">Let’s Talk About</h2>
+          <h2 className="text-3xl font-bold text-custom-purple mb-4">Let’s Talk About</h2>
           <p className="mb-4 text-white">We'd love to hear from you!</p>
-          <h3 className="text-xl font-bold text-purple-600 mb-2">Our Location</h3>
+          <h3 className="text-xl font-bold text-custom-purple mb-2">Our Location</h3>
           <p className="mb-4 text-white"> Unit No.401, 5thFloor, Ideal Square, Ideal Colony, Sr.no. 129, Kothrud, Pune-38</p>
-          <h3 className="text-xl font-bold text-purple-600 mb-2">How Can We Help?</h3>
+          <h3 className="text-xl font-bold text-custom-purple mb-2">How Can We Help?</h3>
           <p className="text-blue-600  text-xl">arrctechnology15@gmail.com</p>
         </div>
   

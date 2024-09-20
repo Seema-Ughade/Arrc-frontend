@@ -313,7 +313,7 @@ const ContactUsAdmin = () => {
     };
 
     return (
-        <div className="container mx-auto p-6">
+        <div className="container  mx-auto p-6">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-2xl font-bold">Contact Us Entries</h2>
                 <div className="space-x-2">

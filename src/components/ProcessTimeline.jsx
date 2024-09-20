@@ -21,9 +21,9 @@ const iconVariants = {
 const ProcessTimeline = () => {
   return (
     <section className="py-12">
-      <div className="container mx-auto px-6 md:px-12 lg:px-40 text-center">
+      <div className="container mx-auto px-6 md:px-12  text-center">
         <motion.h3
-          className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gradient bg-clip-text text-purple-500"
+          className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-gradient bg-clip-text text-custom-purple"
           variants={textVariants}
           initial="hidden"
           animate="visible"
@@ -52,28 +52,28 @@ const ProcessTimeline = () => {
           {[
             {
               icon: <FaCogs className='text-white ' />,
-              color: 'bg-gray-800 hover:bg-purple-500',
+              color: 'bg-gray-800 hover:bg-custom-purple',
               title: 'DESIGN',
               description: 'We develop a strategy for your business & plan accordingly considering requirements. Our solutions are designed in-house, from the ground up.',
               textColor: 'text-white'
             },
             {
               icon: <FaFileCode className='text-white' />,
-              color: 'bg-gray-800 hover:bg-purple-500',
+              color: 'bg-gray-800 hover:bg-custom-purple',
               title: 'DEVELOPMENT',
               description: 'After design, we start the work on your project & provide you with drafts & prototypes. That way, you have the freedom to test your website, mobile app.',
               textColor: 'text-white'
             },
             {
               icon: <FaCheckSquare className='text-white' />,
-              color: 'bg-gray-800 hover:bg-purple-500',
+              color: 'bg-gray-800 hover:bg-custom-purple',
               title: 'DELIVERY/LAUNCH',
               description: 'The final stage is taking the work live and ensuring that your website is error free or your mobile app meets the app store guidelines.',
               textColor: 'text-white'
             },
             {
               icon: <FaRocket className='text-white' />,
-              color: 'bg-gray-800 hover:bg-purple-500',
+              color: 'bg-gray-800 hover:bg-custom-purple',
               title: 'SUPPORT',
               description: 'We value our client relationships & focus on building connections that last beyond our project. We pride ourselves on providing personal service.',
               textColor: 'text-white'

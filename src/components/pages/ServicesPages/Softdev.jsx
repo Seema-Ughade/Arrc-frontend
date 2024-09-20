@@ -14,24 +14,23 @@ const SoftDev = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
 
-    gsap.from('.animate', {
-      opacity: 0,
-      y: 50,
-      stagger: 0.3,
-      duration: 1,
-      ease: "power2.out",
-      onComplete: () => {
-        gsap.to('.animate', {
-          opacity: 1,
-          y: 0,
-          duration: 0.1
-        });
+    // Ensure all elements are visible during animation
+    gsap.fromTo(
+      '.animate',
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        stagger: 0.3,
+        duration: 1,
+        ease: "power2.out",
+        clearProps: 'all', // Ensure GSAP clears inline styles after animation
       }
-    });
+    );
   }, []);
 
   return (
-    <section className=" text-white py-8 px-4 sm:px-8 lg:px-16">
+    <section className=" text-white py-8 px-4 sm:px-8 sm:max-w-[800px] md:max-w-[1000px] lg:max-w-[1100px] xl:max-w-[1400px] xl-max:max-w-[1600px] 2xl:max-w-[1800px]">
       <motion.div
         className="relative w-full h-64 sm:h-80 md:h-[40vh] mb-8 lg:mb-12"
         initial={{ opacity: 0, y: -50 }}
@@ -44,13 +43,12 @@ const SoftDev = () => {
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
         />
-             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-lg">
           <h1 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
-          Best Software Development Services
+            Best Software Development Services
           </h1>
         </div>
       </motion.div>
-
 
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start">
         <motion.div
@@ -85,60 +83,43 @@ const SoftDev = () => {
         </motion.div>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 mt-8 lg:mt-12">
-        <motion.div
-          className="flex flex-col items-center space-y-4 w-full sm:w-1/2 md:w-1/3 animate"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          data-aos="fade-up"
-        >
-          <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 rounded-full">
-            <img src={icon1} alt="Custom Solutions" className="w-10 h-10 object-contain" />
-          </div>
-          <h3 className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-            Custom Solutions
-          </h3>
-          <p className="text-sm sm:text-base text-gray-300 text-center">
-            Custom solutions are best fit to any customer business processes and daily operations. So we prefer to build custom or customer oriented solutions in reasonable cost which will save customer time and legacy software maintenance. Please contact us for more information.
-          </p>
-        </motion.div>
-
-        <motion.div
-          className="flex flex-col items-center space-y-4 w-full sm:w-1/2 md:w-1/3 animate"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          data-aos="fade-up"
-        >
-          <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 rounded-full">
-            <img src={icon2} alt="Speedy Workflow" className="w-10 h-10 object-contain" />
-          </div>
-          <h3 className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-            Speedy Workflow
-          </h3>
-          <p className="text-sm sm:text-base text-gray-300 text-center">
-            We personally know a lot of competing companies, where the speedy and agile work style is never cherished and all the deadlines pass by just as the team gets stuck behind the schedule. We cannot emphasize enough how much different our approach to the timing.
-          </p>
-        </motion.div>
-
-        <motion.div
-          className="flex flex-col items-center space-y-4 w-full sm:w-1/2 md:w-1/3 animate"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          data-aos="fade-up"
-        >
-          <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 rounded-full">
-            <img src={icon3} alt="Thorough Testing" className="w-10 h-10 object-contain" />
-          </div>
-          <h3 className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-            Thorough Testing
-          </h3>
-          <p className="text-sm sm:text-base text-gray-300 text-center">
-            With the web & software department just as much extensive as it is attentive, we're can assure you of the end-quality of our product. This means that regardless of either the scale or the complexity of the task at hand, we're ready to make it faultless!
-          </p>
-        </motion.div>
+      <div className="flex flex-wrap justify-center  mt-8 lg:mt-12">
+        {[
+          {
+            icon: icon1,
+            title: 'Custom Solutions',
+            text: 'Custom solutions are best fit to any customer business processes and daily operations. So we prefer to build custom or customer oriented solutions in reasonable cost which will save customer time and legacy software maintenance. Please contact us for more information.',
+          },
+          {
+            icon: icon2,
+            title: 'Speedy Workflow',
+            text: 'We personally know a lot of competing companies, where the speedy and agile work style is never cherished and all the deadlines pass by just as the team gets stuck behind the schedule. We cannot emphasize enough how much different our approach to the timing.',
+          },
+          {
+            icon: icon3,
+            title: 'Thorough Testing',
+            text: 'With the web & software department just as much extensive as it is attentive, we can assure you of the end-quality of our product. Regardless of the scale or complexity of the task, we are ready to make it faultless!',
+          },
+        ].map((item, idx) => (
+          <motion.div
+            key={idx}
+            className="flex flex-col items-center space-y-4 w-full sm:w-1/2 md:w-1/3 p-7 animate"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            data-aos="fade-up"
+          >
+            <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 rounded-full">
+              <img src={item.icon} alt={item.title} className="w-10 h-10 object-contain" />
+            </div>
+            <h3 className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+              {item.title}
+            </h3>
+            <p className="text-sm sm:text-base text-gray-300 text-center">
+              {item.text}
+            </p>
+          </motion.div>
+        ))}
       </div>
 
       <div className="flex flex-wrap mx-4 lg:mx-10">
@@ -150,58 +131,26 @@ const SoftDev = () => {
           data-aos="fade-up"
         >
           <div className="main-timeline">
-            <a href="#" className="timeline flex items-center space-x-4 mb-8 animate">
-              <div className="timeline-icon flex-shrink-0 flex items-center justify-center w-12 h-12 bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 rounded-full">
-                <FaCogs className="text-white" />
-              </div>
-              <div className="timeline-content">
-                <h3 className="title text-lg sm:text-xl font-semibold bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-                  DESIGN
-                </h3>
-                <p className="description text-sm sm:text-base text-gray-300">
-                  We develop a strategy for your business &amp; plan accordingly considering requirements. Our solutions are designed in-house, from the ground up.
-                </p>
-              </div>
-            </a>
-            <a href="#" className="timeline flex items-center space-x-4 mb-8 animate">
-              <div className="timeline-icon flex-shrink-0 flex items-center justify-center w-12 h-12 bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 rounded-full">
-                <FaFileCode className="text-white" />
-              </div>
-              <div className="timeline-content">
-                <h3 className="title text-lg sm:text-xl font-semibold bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-                  DEVELOPMENT
-                </h3>
-                <p className="description text-sm sm:text-base text-gray-300">
-                  After design, we start the work on your project &amp; provide you with drafts &amp; prototypes. That way, you have the freedom to test your website, mobile app.
-                </p>
-              </div>
-            </a>
-            <a href="#" className="timeline flex items-center space-x-4 mb-8 animate">
-              <div className="timeline-icon flex-shrink-0 flex items-center justify-center w-12 h-12 bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 rounded-full">
-                <FaCheckSquare className="text-white" />
-              </div>
-              <div className="timeline-content">
-                <h3 className="title text-lg sm:text-xl font-semibold bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-                  DELIVERY/LAUNCH
-                </h3>
-                <p className="description text-sm sm:text-base text-gray-300">
-                  The final stage is taking the work live and ensuring that your website is error free or your mobile app meets the app store guidelines.
-                </p>
-              </div>
-            </a>
-            <a href="#" className="timeline flex items-center space-x-4 mb-8 animate">
-              <div className="timeline-icon flex-shrink-0 flex items-center justify-center w-12 h-12 bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 rounded-full">
-                <FaRocket className="text-white" />
-              </div>
-              <div className="timeline-content">
-                <h3 className="title text-lg sm:text-xl font-semibold bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-                  SUPPORT
-                </h3>
-                <p className="description text-sm sm:text-base text-gray-300">
-                  We value our client relationships &amp; focus on building connections that last beyond our project. We pride ourselves on providing personal service.
-                </p>
-              </div>
-            </a>
+            {[
+              { icon: FaCogs, title: 'DESIGN', text: 'We develop a strategy for your business & plan accordingly considering requirements. Our solutions are designed in-house, from the ground up.' },
+              { icon: FaFileCode, title: 'DEVELOPMENT', text: 'After design, we start the work on your project & provide you with drafts & prototypes. That way, you have the freedom to test your website, mobile app.' },
+              { icon: FaCheckSquare, title: 'DELIVERY/LAUNCH', text: 'The final stage is taking the work live and ensuring that your website is error free or your mobile app meets the app store guidelines.' },
+              { icon: FaRocket, title: 'SUPPORT', text: 'We value our client relationships & focus on building connections that last beyond our project. We pride ourselves on providing personal service.' },
+            ].map((item, idx) => (
+              <a href="#" key={idx} className="timeline flex items-center space-x-4 mb-8 animate">
+                <div className="timeline-icon flex-shrink-0 flex items-center justify-center w-12 h-12 bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 rounded-full">
+                  <item.icon className="text-white" />
+                </div>
+                <div className="timeline-content">
+                  <h3 className="title text-lg sm:text-xl font-semibold bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+                    {item.title}
+                  </h3>
+                  <p className="description text-sm sm:text-base text-gray-300">
+                    {item.text}
+                  </p>
+                </div>
+              </a>
+            ))}
           </div>
         </motion.div>
       </div>
